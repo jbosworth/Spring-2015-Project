@@ -24,7 +24,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 
 public class UDiscover extends ApplicationAdapter {
-	SpriteBatch batch;
+	SpriteBatch batch; 
 	Texture background;
 	Texture player;
 	double elapsed;
