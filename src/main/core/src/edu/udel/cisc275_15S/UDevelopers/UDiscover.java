@@ -50,5 +50,5 @@ public class UDiscover extends ApplicationAdapter {
 		font.draw(batch, speech, 180, 150);
 		batch.end();
 
-		}
+		} 
 }
