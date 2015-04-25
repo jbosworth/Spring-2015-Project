@@ -1,4 +1,4 @@
-package edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers.Display;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
@@ -17,7 +18,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
  * @author Sean
  *
  */
-public class genericButton {
+public class genericButton extends Button{
 
 	Stage stage;
     TextButton button;
