@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
-public class Map {
+public class Map extends GameState{
 public Map(){
 	//System.out.println(Gdx.files.internal("libs/campus.jpg").file().getAbsolutePath());
 }
