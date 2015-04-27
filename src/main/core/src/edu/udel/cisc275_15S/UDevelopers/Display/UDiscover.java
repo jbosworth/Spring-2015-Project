@@ -9,7 +9,6 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class UDiscover extends ApplicationAdapter {
 	SpriteBatch batch; 
 	genericScreen screen;
-	genericButton button;
 	
 	BitmapFont font;
 	String speech;
@@ -26,11 +25,8 @@ public class UDiscover extends ApplicationAdapter {
 		
 		batch = new SpriteBatch();
 		screen = new genericScreen(batch, "sampleUD2.jpg", "transparent.png");
-
-        button = new genericButton("arrow.png",width*0.5f, height*0.7f, width*0.25f, height*0.25f);
-
 	}
-
+	
 	@Override
 	public void render () {
 
@@ -39,7 +35,6 @@ public class UDiscover extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		 
 		screen.render(Gdx.graphics.getDeltaTime());
-		button.render();
 		
 		} 
 }
