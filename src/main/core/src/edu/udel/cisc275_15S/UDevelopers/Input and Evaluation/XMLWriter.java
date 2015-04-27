@@ -4,16 +4,10 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import com.badlogic.gdx.utils.XmlWriter;
 
 public class XMLWriter {
-	private final static Charset ENCODING = StandardCharsets.UTF_8;
 	
 	//Singleton XMLWriter- only one reader necessary in game
 	private static final XMLWriter INSTANCE = new XMLWriter();
