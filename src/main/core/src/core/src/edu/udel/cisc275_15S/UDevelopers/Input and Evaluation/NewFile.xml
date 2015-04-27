@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Test>
+	<questions>
+		<question>
+			<Qid q_id="0"/>
+			<Aid a_id="0"/>
+			<Text text="What is this?"/>
+		</question>
+	</questions>
+	<answers>
+		<answer>
+			<Qid q_id="0"/>
+			<Aid a_id="0"/>
+			<Text text="This is a test."/>
+			<Bool correct="true"/>
+		</answer>
+	</answers>
+</Test>
