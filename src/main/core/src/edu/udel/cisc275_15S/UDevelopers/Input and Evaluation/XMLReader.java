@@ -37,7 +37,7 @@ public class XMLReader {
 		XmlReader reader = new XmlReader();
 		Element root = null;
 		try {
-			root = reader.parse(Gdx.files.internal("assets/" + file));
+			root = reader.parse(Gdx.files.internal(file));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
