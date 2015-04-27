@@ -7,11 +7,13 @@ public class Controller {
 	/*Any useful attributes?
 	 * Keep track of progress.
 	 */
+	String name = "";
+	int id = 0;
 	// List of Questions completed (organize by episode)
 	
 	//   -----Flow of the Game-----
 	//Start with title screen
-		//Take id and write to eval XML file
+		//Take id and name- store them.
 	
 	//Move to map screen
 	
@@ -27,6 +29,8 @@ public class Controller {
 	
 	//Game ends when all episodes are complete
 		//End Screen? Thank the user for participating? (even if required)
+	
+	//Take id and write to a file- combine all evaluation info in this file for client
 	
 	
 }

@@ -1,6 +1,7 @@
 package edu.udel.cisc275_15S.evaluate;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Path;
 import java.util.ArrayList;
 
@@ -10,8 +11,8 @@ import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.utils.XmlReader.Element;
 
 public class XMLReader {
-	private ArrayList<Question> questions;
-	private ArrayList<Answer> answers;
+	private ArrayList<Question> questions = new ArrayList<Question>();
+	private ArrayList<Answer> answers = new ArrayList<Answer>();
 	
 	//Singleton XMLReader- only one reader necessary in game
 	private static final XMLReader INSTANCE = new XMLReader();
@@ -29,15 +30,14 @@ public class XMLReader {
 	}
 	
 	/* Reads from a given XML file. It parses and stores questions and answers
-	 * within the XMLReader. @param file should be a classpath. For example, 
-	 * "NewFile.dtd" is what should be passed to readFile().
+	 * within the XMLReader. @param file should be the name of the input file. For example, 
+	 * "Student_Resources.xml" is what should be passed to readFile().
 	 */
 	public void readFile(String file){
 		XmlReader reader = new XmlReader();
-		FileHandle handle = Gdx.files.classpath(file);
 		Element root = null;
 		try {
-			root = reader.parse(handle);
+			root = reader.parse(Gdx.files.internal("assets/" + file));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
