@@ -1,0 +1,198 @@
+<Dorm_Questions key1="Academic calendar" key2="Changing major">
+	<question>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="How many weeks after the start of the semester does the free drop/add period end?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Two"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Correct!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Three"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Four"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Seven"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<question>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="After the free drop/add period ends, are you stuck in the class?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="No, you can still withdraw without academic penalty before a given date"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Correct!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Yes"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="No, you can drop the class at any time, but you must pay a fee"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="This statement is incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="No, you can add a class at any time, but it may be a lot of work"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="This statement is incorrect. Try again!"></Text>
+	</response>
+	<question>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="How many weeks after the start of the semester is the deadline to withdraw from a class?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Five"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Nine"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Correct!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Ten"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Twelve"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect! Try again."></Text>
+	</response>
+	<question>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="How do you change your major?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Schedule a meeting with your advisor"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect! Try again."></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Email your advisor asking him/her to change your major"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect! Try again."></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Fill out a Change of Major form on UDSIS"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Correct! By filling out this form, the relevant departments will be notified and will be able to approve the change."></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Ask the dean of the department of the major you are switching into"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect! Try again."></Text>
+	</response>
+</Dorm_Questions>
