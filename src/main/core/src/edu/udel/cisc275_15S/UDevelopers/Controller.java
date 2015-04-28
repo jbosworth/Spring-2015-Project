@@ -1,4 +1,4 @@
-package edu.udel.cisc275_15S.evaluate;
+package edu.udel.cisc275_15S.UDevelopers;
 
 /* UDiscover's main class.
  * 

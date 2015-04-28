@@ -208,7 +208,7 @@ public class genericScreen implements Screen{
 		
 		for(int i=0; i<numButtonsX; i++) {
 			for(int j=0; j<numButtonsY; j++) {
-				b = new genericButton(new Texture(pix),x + width*i , y + height*j, width, height, "");
+				b = new genericButton(new Texture(pix),x + width*i , y + height*j, width, height);
 				b.setId(id);
 				b.getButton().setVisible(true);
 				buttons.add(b);
@@ -216,7 +216,7 @@ public class genericScreen implements Screen{
 			}
 		}
 
-		b = new genericButton(new Texture(pix),x,y,rectDim[2],rectDim[3], "");
+		b = new genericButton(new Texture(pix),x,y,rectDim[2],rectDim[3]);
 		b.getButton().setVisible(false);
 		b.setId(0);
 		buttons.add(b);

@@ -1,4 +1,4 @@
-package edu.udel.cisc275_15S.evaluate;
+package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 
 public class Response {
 	private int q_id; // Identify which question it is under
