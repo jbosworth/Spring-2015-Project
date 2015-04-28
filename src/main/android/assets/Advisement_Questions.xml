@@ -1,4 +1,4 @@
-<advisement_questions key1="Roles of an advisor" key2="Responsibilities of an advisee">
+<Advisement_Questions key1="Roles of an advisor" key2="Responsibilities of an advisee">
 	<question>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
@@ -146,4 +146,4 @@
 		<Aid a_id="3"></Aid>
 		<Text text="Incorrect: try again!"></Text>
 	</response>
-</advisement_questions>
+</Advisement_Questions>
