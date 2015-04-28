@@ -1,0 +1,149 @@
+<advisement_questions key1="Roles of an advisor" key2="Responsibilities of an advisee">
+	<question>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="What is your primary responsibility as an advisee?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Periodically inform your advisor on how your classes are going"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect: this is not one of your primary requirements as an advisee."></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Share information from your advisor with your classmates"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect: this is not one of your primary requirements as an advisee."></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Schedule meetings with your advisor each semester"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Correct: each student should meet with his/her advisor each semester for help choosing and enrolling in classes."></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="You have no responsibilities beyond what your advisor suggests you to do"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect: try again."></Text>
+	</response>
+	<question>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="What is the advisor’s primary role?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Help the student adjust to campus life"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect: this task is better suited for the Division of Student Life or your resident assistant."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Answer any questions the student has about programs at the university"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect: this task is better suited for the Division of Student Life."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Provide guidance regarding coursework"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Correct: this is the primary responsibility of an advisor."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="All of the above"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect: not all of these are primary responsibilities of an advisor."></Text>
+	</response>
+	<question>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Who is not the best person to go to if you just need to talk?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Your advisor"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Correct! Your advisor can help you in many ways, but they are not trained to listen to your problems."></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Your resident assistant"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect: try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Center for Counseling and Student Development"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Incorrect: try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="A close friend"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect: try again!"></Text>
+	</response>
+</advisement_questions>
