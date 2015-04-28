@@ -1,0 +1,198 @@
+<Student_Health_Questions key1="Student Financial Services" key2="Center for Counseling and Student Development" key3="Student Health Services" key4="UDPD">
+	<question>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Choose the incorrect statement about My Finances."></Text>
+	</question>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="There is a portal where parents can be granted access to the student’s financial account"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Payments must be sent to the Student Services Building on Lovett Ave"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="You’re right, this statement is incorrect: payments can be made online through My Finances"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="There is guidance about outside scholarships"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="This statement is correct: My Finances provides links and tips for finding scholarships outside of the university.  Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="There is information about Work Study Options"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="0"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<question>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="What is the purpose of the assessment (screening interview) before receiving regular counseling sessions at the Center for Counseling and Student Development?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="To determine if your financial package will cover counseling."></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="False: Counseling is completely covered under the Student Health Fee."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="To determine which services would best suit your needs."></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="The assessment is used to determine the frequency and type of counseling which would best suit your needs."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="To determine if your issue really needs counseling"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="False: Students are never turned down because of the nature of their issue."></Text>
+	</response>
+	<answer>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="All of the above."></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="1"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="False: two of the above statements are incorrect."></Text>
+	</response>
+	<question>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Which of the following is an incorrect statement about Student Health Services?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Free STD testing is available"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="There is a self-care clinic which provides free over-the-counter medicine to treat the common cold as well as thermometers."></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="A wart clinic is available."></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="You must make an appointment before seeing a physician."></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="2"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="You're correct, this statement is false: walk-ins are accepted, but the wait time may be longer than for those students who made an appointment beforehand."></Text>
+	</response>
+	<question>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Which of the following is an incorrect statement about the University of Delaware Police Department?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Sexual Assault Prevention and Education is provided by the University of Delaware Police"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Physical Self Defense classes are provided by the University of Delaware Police"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="The number to call for on-campus emergencies is (302) 831-2222"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="You're correct, this statement is false: this is the non-emergency number. Call 911 for any emergencies on campus."></Text>
+	</response>
+	<answer>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="The LiveSafe app allows you to connect with police via text"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="3"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="This statement is correct. Try again!"></Text>
+	</response>
+</Student_Health_Questions>
