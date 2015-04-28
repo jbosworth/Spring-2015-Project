@@ -1,4 +1,4 @@
-<career_dialogue c1="Student" c2="Career Services Receptionist">
+<Career_Dialogue c1="Student" c2="Career Services Receptionist">
 	<c2 text="Welcome to the Career Service Center! How may I help you?"></c2>
 	<c1 text="I’m currently an Environmental Studies major, but I’m thinking I would like to switch into Nutrition instead. Could you help?"></c1>
 	<c2 text="Of course! Here at the Career Services Center, we provide answers to how different majors connect to possible careers. We may also direct you to your advisor or online workshops through the Office of Academic Enrichment for more help with seeing how a particular major might tie do different careers. The Undergraduate Research Office can also be helpful if you’re considering a career in research. Through the Student Portal located on our website, you can even explore your values, skills and interests through our Self Exploration tool, and you can check out possible careers pertaining to your major as well as graduate school options if you are considering an advanced degree."></c2>
@@ -11,4 +11,4 @@
 	<c1 text="That’s awesome. One last thing – I parked in the Perkins Parking Garage behind this building and I am wondering if it’s free to park there?"></c1>
 	<c2 text="Unfortunately, it is only free if you use it for 15 min or less."></c2>
 	<c1 text="In that case, I’m gonna stop by the Perkins Student Center next door to get some coffee. Thanks again for all your help!"></c1>
-</career_dialogue>
+</Career_Dialogue>
