@@ -1,6 +1,6 @@
 package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 
-public class Question {
+public class Question extends Text {
 	private int q_id; // Identify which question it is
 	private int a_id; // Identify the correct answer
 	private String text; // Question to be displayed

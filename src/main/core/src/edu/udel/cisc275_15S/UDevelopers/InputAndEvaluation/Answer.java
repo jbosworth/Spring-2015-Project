@@ -1,6 +1,6 @@
 package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 
-public class Answer {
+public class Answer extends Text {
 	private int q_id; // Identify Question that this answer belongs to
 	private int a_id; // Identify which answer this is
 	private String text; // Answer to be displayed

@@ -1,6 +1,6 @@
 package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 
-public class Response {
+public class Response extends Text {
 	private int q_id; // Identify which question it is under
 	private int a_id; // Identify the answer it is responding to
 	private String text; // Response (Correct or Incorrect with explanation)

@@ -15,6 +15,7 @@ public class XMLReader {
 	private ArrayList<Question> questions = new ArrayList<Question>();
 	private ArrayList<Answer> answers = new ArrayList<Answer>();
 	private ArrayList<Response> responses = new ArrayList<Response>();
+	private ArrayList<Dialogue> dialogue = new ArrayList<Dialogue>();
 	
 	//Singleton XMLReader- only one reader necessary in game
 	private static final XMLReader INSTANCE = new XMLReader();
@@ -31,8 +32,17 @@ public class XMLReader {
 		return answers;
 	}
 	
+	public ArrayList<Response> getResponses(){
+		return responses;
+	}
+	
+	public ArrayList<Dialogue> getDialogue(){
+		arrange();
+		return dialogue;
+	}
+	
 	public ArrayList getQuestion(){
-		ArrayList question = new ArrayList();
+		ArrayList<Text> question = new ArrayList<Text>();
 		readFile("Student Health.xml");
 		Random r1 = new Random();
 		Random r2 = new Random();
@@ -52,6 +62,17 @@ public class XMLReader {
 			this.answers.add(a);
 		}
 		return question;
+	}
+	
+	// Get response to selected answer @code a, return the text of the response
+	public String getResponse(Answer a){
+		String result="";
+		for(Response r : responses){
+			if( (r.getQ_id() == a.getQ_id()) && (r.getA_id() == a.getA_id() ) ){
+				result = r.getText();
+			}
+		}
+		return result;
 	}
 	
 	/* Reads from a given XML file. It parses and stores questions and answers
@@ -107,5 +128,58 @@ public class XMLReader {
 		    Response r = new Response(q_id, a_id, text);
 		    this.responses.add(r);
 		}
+		
+		Array<Element> c1 = root.getChildrenByName("c1");
+		for (Element child : c1)
+		{
+		    String text = child.getAttribute("text");
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
+		
+		Array<Element> c2 = root.getChildrenByName("c2");
+		for (Element child : c2)
+		{
+		    String text = child.getAttribute("text");
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
+		
+		Array<Element> c3 = root.getChildrenByName("c3");
+		for (Element child : c3)
+		{
+		    String text = child.getAttribute("text");
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
+	}
+	
+	private void arrange(){
+		ArrayList<Dialogue> temp = new ArrayList<Dialogue>();
+		Dialogue d = new Dialogue("", 0);
+		int max = dialogue.size();
+		for(int i=1; i<max + 1; i++){
+			int j=0;
+			boolean found = false;
+			while(!found){
+				if(j<max){
+					if(dialogue.get(j).getNum() == i){
+						d = dialogue.remove(j);
+						found = true;
+					}
+				}else if(j>max && !found){
+					throw new Exception;// dialogue i not found and j out of bounds
+				}
+				j++;
+			}
+			temp.add(d);
+		}
+		dialogue = temp;
 	}
 }
