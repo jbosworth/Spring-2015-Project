@@ -7,14 +7,19 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 
+import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLReader;
+
 public class buttonHandler {
 
 	ArrayList<genericButton> buttons;
 	Stage stage;
 	
-	public buttonHandler(ArrayList<genericButton> buttons) {
-		this.buttons = buttons;
-		setUpStage();
+	private static final buttonHandler INSTANCE = new buttonHandler();
+	private buttonHandler() {
+		this.buttons = new ArrayList<genericButton>();
+	}
+	public static buttonHandler getInstance() {
+		return INSTANCE;
 	}
 	
 	public void render() {
@@ -60,5 +65,13 @@ public class buttonHandler {
 				g.getButton().setVisible(!quiz);
 			}
 		}
+	}
+	
+	public void addButtons(ArrayList<genericButton> list) {
+		this.buttons.addAll(list);
+	}
+	
+	public void addButtons(genericButton button) {
+		this.buttons.add(button);
 	}
 }

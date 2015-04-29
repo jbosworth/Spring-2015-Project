@@ -53,7 +53,10 @@ public class genericButton{
 		// Create a button with the "default" TextButtonStyle. A 3rd parameter can be used to specify a name other than "default".
 		button=new TextButton(text,textButtonStyle);
 		button.setBounds(x, y, width, height);
-//		
+		addListener();
+		
+	}
+	public void addListener() {
 		button.addListener(new ChangeListener() {
 			@Override
 			public void changed(ChangeEvent event, Actor actor) {
