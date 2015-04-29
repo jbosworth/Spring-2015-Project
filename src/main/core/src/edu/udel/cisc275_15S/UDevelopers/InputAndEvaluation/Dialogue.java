@@ -1,4 +1,4 @@
-package parsing;
+package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 
 public class Dialogue extends Text {
 	private String text;
