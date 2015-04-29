@@ -6,7 +6,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Academic extends GameState{
-Texture campus= new Texture("/assets/Home Screen.jpg");
+Texture campus= new Texture("blah.jpg");
 	Sprite sb= new Sprite(campus);
 	public Academic(GSM gsm){
 		this.gsm=gsm;
