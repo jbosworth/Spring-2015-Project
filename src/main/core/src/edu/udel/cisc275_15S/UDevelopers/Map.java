@@ -1,4 +1,4 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -11,7 +11,7 @@ public class Map extends GameState{
 public Map(GSM gsm){
 	this.gsm=gsm;//System.out.println(Gdx.files.internal("libs/campus.jpg").file().getAbsolutePath());
 }
-Texture campus= new Texture(Gdx.files.internal("res/campus.jpg"));
+Texture campus= new Texture(Gdx.files.internal("Campus Map-01 (WIDE).jpg"));
 Sprite sb= new Sprite(campus);
 Boolean dormroom, academic, morris,carrer,advisement,health;
 

@@ -1,4 +1,4 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
  

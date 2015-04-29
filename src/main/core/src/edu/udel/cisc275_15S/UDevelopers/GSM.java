@@ -1,4 +1,4 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import java.awt.Graphics2D;
 
@@ -25,8 +25,9 @@ public class GSM {
 	public GSM(SpriteBatch batch){
 		this.batch=batch;
     gameStates=new GameState[NUMGAMESTATES];
+    this.loadState(this.Start);
+    this.loadState(this.Map);
     this.setState(this.Start);
-    this.setState(this.Map);
     currentstate=Start;    
      setState(currentstate);
 	}
