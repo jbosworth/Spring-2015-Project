@@ -61,6 +61,7 @@ public class TextBox {
 		this.buttons.addAll(createBoxButtons());
 		this.handle.addButtons(buttons);
 		Answer answer = new Answer(0, 0, "", false);
+//		handle.quizMode(true);
 	}
 	/**
 	 * Renders the green translucent text box and the text inside of it
@@ -143,8 +144,9 @@ public class TextBox {
 		float width =  rectDim[2];
 		float height =  rectDim[3];
 		float offset = width*0.025f;
+		batch.begin();
 		font.drawWrapped(batch, dialogue, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
-		
+		batch.end();
 		for(genericButton b : buttons) {
 			if(b.isChecked() && b.getId() == 0) {
 				changeText = true;
@@ -216,12 +218,14 @@ public class TextBox {
 		if (changeText) {
 			answer = (Answer) questions.get(answered);
 			response = reader.getResponse(answer);
+			System.out.println(response);
 			changeText = false;
 		}
+		batch.begin();
 		font.drawWrapped(batch, question, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
 		font.drawWrapped(batch, answer.getText(), x + offset, y + height*0.95f*2/3, width - offset, BitmapFont.HAlignment.LEFT);
 		font.drawWrapped(batch, response, x + offset, y + height*0.95f*1/3, width - offset, BitmapFont.HAlignment.LEFT);
-		
+		batch.end();
 		for(genericButton b : buttons) {
 			if(b.isChecked() && b.getId() == 0) {
 				changeText = true;

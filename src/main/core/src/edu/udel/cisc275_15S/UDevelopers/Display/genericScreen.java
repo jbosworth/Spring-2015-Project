@@ -58,6 +58,7 @@ public class genericScreen implements Screen{
         this.textbox = new TextBox(batch);
         handle.addButtons(wordBankBook);
 		handle.setUpStage();
+		XMLReader.getInstance().readFile("Advisement_Dialogue.xml");
 	}
 	
 	@Override
