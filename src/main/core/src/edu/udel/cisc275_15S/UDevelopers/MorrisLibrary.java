@@ -1,25 +1,27 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import edu.udel.cisc275_15S.UDevelopers.Display.genericScreen;
+
 public class MorrisLibrary extends GameState{
-	Texture campus= new Texture("/assets/Home Screen.jpg");
-	Sprite sb= new Sprite(campus);
-	public MorrisLibrary(GSM gsm){
+	Texture campus= new Texture("Screen Shot 2015-04-30 at 3.27.12 AM.png");
+	SpriteBatch batch;
+	public MorrisLibrary(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
+		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.12 AM.png", "bob");
+        this.batch=batch;
 	}
 	
-	public void update(){}
+	public void update(){this.goback();}
 	
 
 	@Override
-	public void render(SpriteBatch batch) {
-		batch.begin();
-		batch.draw(sb, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-	batch.end();
+	public void render() {
+		in.render(0);
 	}
 	
 	

@@ -1,4 +1,4 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
@@ -7,25 +7,23 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class StudentHealth extends GameState{
 
-	Texture campus= new Texture("/assets/Home Screen.jpg");
-	Sprite sb= new Sprite(campus);
+	Texture campus= new Texture("Screen Shot 2015-04-30 at 3.28.27 AM.png");
+	SpriteBatch batch;
 	
-	public StudentHealth(GSM gsm){
+	public StudentHealth(GSM gsm,SpriteBatch batch){
 		this.gsm=gsm;
+		this.batch=batch;
 	}
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
+		this.goback();// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void render(SpriteBatch batch) {
-		batch.begin();
-		batch.draw(sb, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-	batch.end();
-	}
+	public void render() {
+		in.render(0);
 
-	
+	}
 
 }

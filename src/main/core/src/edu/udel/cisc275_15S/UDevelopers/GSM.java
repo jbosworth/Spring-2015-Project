@@ -1,4 +1,4 @@
-package core.src.edu.udel.cisc275_15S.UDevelopers;
+package edu.udel.cisc275_15S.UDevelopers;
 
 import java.awt.Graphics2D;
 
@@ -25,8 +25,8 @@ public class GSM {
 	public GSM(SpriteBatch batch){
 		this.batch=batch;
     gameStates=new GameState[NUMGAMESTATES];
-    this.setState(this.Start);
-    this.setState(this.Map);
+    this.loadState(this.Start);
+    this.loadState(this.Map);
     currentstate=Start;    
      setState(currentstate);
 	}
@@ -34,34 +34,34 @@ public class GSM {
 	public void loadState(int state){
         currentstate=state;
 		if(state==this.Academic){
-			gameStates[state]=new Academic(this);
+			gameStates[state]=new Academic(this, batch);
 		}
 		else if(state==this.Advisement){
-			gameStates[state]=new Advisement(this);
+			gameStates[state]=new Advisement(this, batch);
 
 		}
 		else if(state==this.CareerServices){
-			gameStates[state]=new CareerServices(this);
+			gameStates[state]=new CareerServices(this, batch);
 
 		}
 		else if(state==this.DormRoom){
-			gameStates[state]=new DormRoom(this);
+			gameStates[state]=new DormRoom(this, batch);
 
 		}
 		else if(state==this.Map){
-			gameStates[state]=new Map(this);
+			gameStates[state]=new Map(this, batch);
 
 		}
 		else if(state==this.MorrisLibrary){
-			gameStates[state]=new MorrisLibrary(this);
+			gameStates[state]=new MorrisLibrary(this,batch);
 
 		}
-		else if(state==this.CareerServices){
-			gameStates[state]=new CareerServices(this);
+		else if(state==this.StudentHealth){
+			gameStates[state]=new StudentHealth(this,batch);
 
 		}
 		else if(state==this.Start){
-			gameStates[state]=new Start(this);
+			gameStates[state]=new Start(this, batch);
 
 		}
 		
@@ -98,7 +98,7 @@ catch(Exception e){
 	
 	public void render(){
 		update();
-		gameStates[currentstate].render(batch);
+		gameStates[currentstate].render();
 	}
 	
 	
