@@ -53,20 +53,21 @@ public class XMLReader {
 		readFile("Student Health.xml");
 		Random r1 = new Random();
 		Random r2 = new Random();
-		Question q = questions.remove(r1.nextInt(questions.size()));
-		question.add(q);
-		ArrayList<Answer> temp = new ArrayList<Answer>();
-		while(answers.size() != 0){
-			Answer a = answers.remove(r2.nextInt(answers.size()));
-			if(a.getQ_id() == q.getQ_id()){
-				question.add(a);
-			}else{
-				temp.add(a);
+		if(questions.size() != 0){
+			Question q = questions.remove(r1.nextInt(questions.size()));
+			question.add(q);
+			ArrayList<Answer> temp = new ArrayList<Answer>();
+			while(answers.size() != 0){
+				Answer a = answers.remove(r2.nextInt(answers.size()));
+				if(a.getQ_id() == q.getQ_id()){
+					question.add(a);
+				}else{
+					temp.add(a);
+				}
 			}
-		}
-		
-		for(Answer a : temp){
-			this.answers.add(a);
+			for(Answer a : temp){
+				this.answers.add(a);
+			}
 		}
 		return question;
 	}
@@ -101,82 +102,84 @@ public class XMLReader {
 			e.printStackTrace();
 		}
 		
-		//Retrieve questions
-		Array<Element> questions = root.getChildrenByName("question");
-		for (Element child : questions)
-		{
-		    String qid = child.getChildByName("Qid").getAttribute("q_id");
-		    String aid = child.getChildByName("Aid").getAttribute("a_id");
-		    String text = child.getChildByName("Text").getAttribute("text");
-		    int q_id = Integer.parseInt(qid);
-		    int a_id = Integer.parseInt(aid);
-		    Question q = new Question(q_id, a_id, text);
-		    this.questions.add(q);
-		}
-		
-		//Retrieve answers
-		Array<Element> answers = root.getChildrenByName("answer");
-		for (Element child : answers)
-		{
-		    String qid = child.getChildByName("Qid").getAttribute("q_id");
-		    String aid = child.getChildByName("Aid").getAttribute("a_id");
-		    String text = child.getChildByName("Text").getAttribute("text");
-		    String bool = child.getChildByName("Bool").getAttribute("correct");
-		    int q_id = Integer.parseInt(qid);
-		    int a_id = Integer.parseInt(aid);
-		    boolean correct = false;
-		    if(bool.equals("true")){
-		    	correct = true;
-		    }
-		    Answer a = new Answer(q_id, a_id, text, correct);
-		    this.answers.add(a);
-		}
-		
-		//Retrieve responses
-		Array<Element> responses = root.getChildrenByName("response");
-		for (Element child : responses){
-			String qid = child.getChildByName("Qid").getAttribute("q_id");
-		    String aid = child.getChildByName("Aid").getAttribute("a_id");
-		    String text = child.getChildByName("Text").getAttribute("text");
-		    int q_id = Integer.parseInt(qid);
-		    int a_id = Integer.parseInt(aid);
-		    Response r = new Response(q_id, a_id, text);
-		    this.responses.add(r);
-		}
-		
-		//Retrieve dialogue from characters (there are 3 at most)
-		Array<Element> c1 = root.getChildrenByName("c1");
-		String n1 = root.getAttribute("c1");// get name of character
-		for (Element child : c1)
-		{
-		    String text = n1 + ": " + child.getAttribute("text");// add name to beginning of text
-		    String n = child.getAttribute("num");
-		    int num = Integer.parseInt(n);
-		    Dialogue d = new Dialogue(text, num);
-		    dialogue.add(d);
-		}
-		
-		Array<Element> c2 = root.getChildrenByName("c2");
-		String n2 = root.getAttribute("c2");// get name of character
-		for (Element child : c2)
-		{
-		    String text = n2 + ": " + child.getAttribute("text");// add name to beginning of text
-		    String n = child.getAttribute("num");
-		    int num = Integer.parseInt(n);
-		    Dialogue d = new Dialogue(text, num);
-		    dialogue.add(d);
-		}
-		
-		Array<Element> c3 = root.getChildrenByName("c3");
-		String n3 = root.getAttribute("c3");// get name of character
-		for (Element child : c3)
-		{
-		    String text = n3 + ": " + child.getAttribute("text");// add name to beginning of text
-		    String n = child.getAttribute("num");
-		    int num = Integer.parseInt(n);
-		    Dialogue d = new Dialogue(text, num);
-		    dialogue.add(d);
-		}
+		if(file.contains("Question")){
+			//Retrieve questions
+			Array<Element> questions = root.getChildrenByName("question");
+			for (Element child : questions)
+			{
+			    String qid = child.getChildByName("Qid").getAttribute("q_id");
+			    String aid = child.getChildByName("Aid").getAttribute("a_id");
+			    String text = child.getChildByName("Text").getAttribute("text");
+			    int q_id = Integer.parseInt(qid);
+			    int a_id = Integer.parseInt(aid);
+			    Question q = new Question(q_id, a_id, text);
+			    this.questions.add(q);
+			}
+			
+			//Retrieve answers
+			Array<Element> answers = root.getChildrenByName("answer");
+			for (Element child : answers)
+			{
+			    String qid = child.getChildByName("Qid").getAttribute("q_id");
+			    String aid = child.getChildByName("Aid").getAttribute("a_id");
+			    String text = child.getChildByName("Text").getAttribute("text");
+			    String bool = child.getChildByName("Bool").getAttribute("correct");
+			    int q_id = Integer.parseInt(qid);
+			    int a_id = Integer.parseInt(aid);
+			    boolean correct = false;
+			    if(bool.equals("true")){
+			    	correct = true;
+			    }
+			    Answer a = new Answer(q_id, a_id, text, correct);
+			    this.answers.add(a);
+			}
+			
+			//Retrieve responses
+			Array<Element> responses = root.getChildrenByName("response");
+			for (Element child : responses){
+				String qid = child.getChildByName("Qid").getAttribute("q_id");
+			    String aid = child.getChildByName("Aid").getAttribute("a_id");
+			    String text = child.getChildByName("Text").getAttribute("text");
+			    int q_id = Integer.parseInt(qid);
+			    int a_id = Integer.parseInt(aid);
+			    Response r = new Response(q_id, a_id, text);
+			    this.responses.add(r);
+			}
+		}else{
+			
+			//Retrieve dialogue from characters (there are 3 at most)
+			Array<Element> c1 = root.getChildrenByName("c1");
+			String n1 = root.getAttribute("c1");// get name of character
+			for (Element child : c1)
+			{
+			    String text = n1 + ": " + child.getAttribute("text");// add name to beginning of text
+			    String n = child.getAttribute("num");
+			    int num = Integer.parseInt(n);
+			    Dialogue d = new Dialogue(text, num);
+			    dialogue.add(d);
+			}
+			
+			Array<Element> c2 = root.getChildrenByName("c2");
+			String n2 = root.getAttribute("c2");// get name of character
+			for (Element child : c2)
+			{
+			    String text = n2 + ": " + child.getAttribute("text");// add name to beginning of text
+			    String n = child.getAttribute("num");
+			    int num = Integer.parseInt(n);
+			    Dialogue d = new Dialogue(text, num);
+			    dialogue.add(d);
+			}
+			
+			Array<Element> c3 = root.getChildrenByName("c3");
+			String n3 = root.getAttribute("c3");// get name of character
+			for (Element child : c3)
+			{
+			    String text = n3 + ": " + child.getAttribute("text");// add name to beginning of text
+			    String n = child.getAttribute("num");
+			    int num = Integer.parseInt(n);
+			    Dialogue d = new Dialogue(text, num);
+			    dialogue.add(d);
+			}
 	}
 	
 	//Sorts the dialogue in the correct order of characters' speech
