@@ -147,14 +147,14 @@ public class XMLReader {
 			}
 		}else{//Retrieve dialogue from characters (there are 3 at most)
 			if(file.containts("Advisement") || file.contains("Health")){
-				threeCharacters();
+				threeCharacters(root);
 			}else{
-				twoCharacters();
+				twoCharacters(root);
 			}
 		}
 	}
 		
-	private void twoCharacters(){
+	private void twoCharacters(Element root){
 		Array<Element> c1 = root.getChildrenByName("c1");
 		String n1 = root.getAttribute("c1");// get name of character
 		for (Element child : c1)
@@ -178,8 +178,8 @@ public class XMLReader {
 		}
 	}
 	
-	private void threeCharacters(){
-		twoCharacters();
+	private void threeCharacters(Element root){
+		twoCharacters(root);
 		
 		Array<Element> c3 = root.getChildrenByName("c3");
 		String n3 = root.getAttribute("c3");// get name of character
@@ -202,7 +202,7 @@ public class XMLReader {
 			int j=0;
 			boolean found = false;
 			while(!found){
-				if(j<max){
+				if(j<max || j>=0){
 					if(dialogue.get(j).getNum() == i){
 						d = dialogue.remove(j);
 						found = true;
@@ -213,6 +213,7 @@ public class XMLReader {
 				j++;
 			}
 			temp.add(d);
+			max--;
 		}
 		dialogue = temp;
 	}
