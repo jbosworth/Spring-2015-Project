@@ -145,41 +145,52 @@ public class XMLReader {
 			    Response r = new Response(q_id, a_id, text);
 			    this.responses.add(r);
 			}
-		}else{
-			
-			//Retrieve dialogue from characters (there are 3 at most)
-			Array<Element> c1 = root.getChildrenByName("c1");
-			String n1 = root.getAttribute("c1");// get name of character
-			for (Element child : c1)
-			{
-			    String text = n1 + ": " + child.getAttribute("text");// add name to beginning of text
-			    String n = child.getAttribute("num");
-			    int num = Integer.parseInt(n);
-			    Dialogue d = new Dialogue(text, num);
-			    dialogue.add(d);
+		}else{//Retrieve dialogue from characters (there are 3 at most)
+			if(file.containts("Advisement") || file.contains("Health")){
+				threeCharacters();
+			}else{
+				twoCharacters();
 			}
-			
-			Array<Element> c2 = root.getChildrenByName("c2");
-			String n2 = root.getAttribute("c2");// get name of character
-			for (Element child : c2)
-			{
-			    String text = n2 + ": " + child.getAttribute("text");// add name to beginning of text
-			    String n = child.getAttribute("num");
-			    int num = Integer.parseInt(n);
-			    Dialogue d = new Dialogue(text, num);
-			    dialogue.add(d);
-			}
-			
-			Array<Element> c3 = root.getChildrenByName("c3");
-			String n3 = root.getAttribute("c3");// get name of character
-			for (Element child : c3)
-			{
-			    String text = n3 + ": " + child.getAttribute("text");// add name to beginning of text
-			    String n = child.getAttribute("num");
-			    int num = Integer.parseInt(n);
-			    Dialogue d = new Dialogue(text, num);
-			    dialogue.add(d);
-			}
+		}
+	}
+		
+	private void twoCharacters(){
+		Array<Element> c1 = root.getChildrenByName("c1");
+		String n1 = root.getAttribute("c1");// get name of character
+		for (Element child : c1)
+		{
+		    String text = n1 + ": " + child.getAttribute("text");// add name to beginning of text
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
+		
+		Array<Element> c2 = root.getChildrenByName("c2");
+		String n2 = root.getAttribute("c2");// get name of character
+		for (Element child : c2)
+		{
+		    String text = n2 + ": " + child.getAttribute("text");// add name to beginning of text
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
+	}
+	
+	private void threeCharacters(){
+		twoCharacters();
+		
+		Array<Element> c3 = root.getChildrenByName("c3");
+		String n3 = root.getAttribute("c3");// get name of character
+		for (Element child : c3)
+		{
+		    String text = n3 + ": " + child.getAttribute("text");// add name to beginning of text
+		    String n = child.getAttribute("num");
+		    int num = Integer.parseInt(n);
+		    Dialogue d = new Dialogue(text, num);
+		    dialogue.add(d);
+		}
 	}
 	
 	//Sorts the dialogue in the correct order of characters' speech
