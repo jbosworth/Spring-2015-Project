@@ -27,16 +27,16 @@ public class XMLReader {
 		return INSTANCE;
 	}
 	
-	//private getters for use by special functions
-	private ArrayList<Question> getQuestions(){
+	//private getters for use by special functions (change to public for testing/private for game release)
+	public ArrayList<Question> getQuestions(){
 		return questions;
 	}
 	
-	private ArrayList<Answer> getAnswers(){
+	public ArrayList<Answer> getAnswers(){
 		return answers;
 	}
 	
-	private ArrayList<Response> getResponses(){
+	public ArrayList<Response> getResponses(){
 		return responses;
 	}
 	
@@ -48,9 +48,8 @@ public class XMLReader {
 	//GUI calls this to get one single, random question from the list
 	//The resulting list is of the form:
 	//Question, Answer, Answer, Answer, Answer
-	public ArrayList getQuestion(){
+	public ArrayList<Text> getQuestion(){
 		ArrayList<Text> question = new ArrayList<Text>();
-		readFile("Student Health.xml");
 		Random r1 = new Random();
 		Random r2 = new Random();
 		if(questions.size() != 0){
@@ -146,7 +145,7 @@ public class XMLReader {
 			    this.responses.add(r);
 			}
 		}else{//Retrieve dialogue from characters (there are 3 at most)
-			if(file.containts("Advisement") || file.contains("Health")){
+			if(file.contains("Advisement") || file.contains("Health")){ //Edit if more files have 3 characters
 				threeCharacters(root);
 			}else{
 				twoCharacters(root);
@@ -208,7 +207,7 @@ public class XMLReader {
 						found = true;
 					}
 				}else if(j>max && !found){
-					throw new Exception();// dialogue i not found and j out of bounds
+					//throw new Exception();// dialogue i not found and j out of bounds
 				}
 				j++;
 			}
