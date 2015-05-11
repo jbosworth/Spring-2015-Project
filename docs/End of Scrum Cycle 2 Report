@@ -1,0 +1,59 @@
+UDevelopers – Scrum Cycle 2 Report 
+
+Start of Scrum Cycle 2 – Sean Rivera Scrum Master
+1. What bugs or enhancements will be included in the next project release?
+•	The game’s components should be integrated. 
+•	Graphics should be updated to meet projected standards. 
+o	more similar to the powerpoint
+•	Different forms of testing should be implemented. 
+o	Fill in the blank (maybe drag and drop?)
+•	Unit testing and player testing
+•	Recording and output results to a file should be included.
+•	Some of Amazing Race type of design
+•	Overall improved navigation capabilities 
+o	Word bank more intuitive
+o	Return to main map screen and save progress
+o	Make it more obvious where to click to continue game (i.e. dialogue)
+•	Further improve dialogue
+
+2. Who will work on each bug fix or enhancement implementation?
+•	Graphics improvement – Sean
+•	Output – Jordan
+•	Graphics – Miles, Adrian, Sean
+•	Improve existing pieces – All
+•	Unit testing and player testing – All
+•	Amazing Race – Kati
+•	Different Testing forms – Kati
+•	Dialogue - Kati
+
+3. What resources will be required to complete the bug fix or enhancement implementation?
+
+	Camera and picture tools will be used for graphics. Time and most importantly group integration will be necessary to bring this game along. 
+
+4. How will successful bug fixes or enhancement implementations be demonstrated?
+
+	A powerpoint demonstrated during the alpha release show that is fully interactive and a working time and perhaps leaderboard with output files would be a successful implementation of these current tasks. Additionally, different forms of testing and correct order of dialogue will improve the player experience and realize UDiscover’s goals.
+
+End of Scrum Cycle 2 – Kati McLaughlin Scrum Master
+5. What progress has been made on product development? 
+	We have compiled the different components of our code into one working prototype. We have enhanced our product by fixing bugs, redefining the requirements and features we will be able to incorporate based on the remaining time, and improving the storyline to make the game more fun.	
+
+6. What obstacles have been encountered? 
+	We have not been able to meet up enough in person which makes the fluidity of our project suffer. It has been our goal since to find times where we can meet up face-to-face with our entire group. Another obstacle we encountered is that we realized it will not be feasible to incorporate all of the elements we had thought of adding to our product considering the approaching time constraint.
+
+7. What bugs have been fixed or enhancements implemented? 
+	We have successfully incorporated our various code pieces into one fluid game. We have fixed bugs in the Game State Manager and the Controller classes. We have fixed the XMLReader and Controller classes so that dialogue is now read in order. We have incorporated an Amazing Race competition theme into our storyline to make our game more exciting to play. We also worked on unit testing and documentation after our code reviews were conducted.
+
+8. What bugs have not been fixed or enhancements not implemented? 
+	One enhancement we hoped to add was open-ended questions with a word bank of possible answers. We realized for the sake of time that we will need to stick with multiple choice questions. Things that we still need to add include:
+•	Forcing a module to be retaken if a score of below 75% is achieved on the assessment questions
+•	Adding a timer and update messages to better incorporate the Amazing-Race-style competition theme
+•	Recording player feedback to an xml file according to the specifications given in class
+•	Having the choice of different teammates for the game
+•	Adding more questions and checking the accuracy of a few of the questions that were not already fact-checked online
+
+9. What resources were consumed?
+	We each spent a considerable amount of time improving code and other features such as graphics and dialogue during this scrum cycle, but we will need to spend considerably more time before the project is due.
+
+10. How can the product development process be improved?
+	We certainly need to meet more in person as a group for extended periods of time. We need to become more organized and plan ahead better: we need to get clear ideas of what we need to do, what we are and are not able to implement, and who will be doing which task. We have improved on these areas since the beginning of our project, but they are still not up to par. We also need to ensure that the amount of time each group member spends on the project is even all around. 
