@@ -6,11 +6,13 @@ package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
 public class Record {
 	//Include useful information to be stored
 	private String q_id; // Identification of question answered
+	private String answer; // The answer chosen
 	private String result; // Was the answer correct?
 	private String take; // Was this their first, second... try?
 	
-	public Record(String q_id, String result, String take){
+	public Record(String q_id, String answer, String result, String take){
 		this.q_id = q_id;
+		this.answer = answer;
 		this.result = result;
 		this.take = take;
 	}
@@ -18,6 +20,8 @@ public class Record {
 	public String toString(){
 		String s = "";
 		s += q_id;
+		s += ", ";
+		s += answer;
 		s += ", ";
 		s += result;
 		s += ", ";
@@ -29,21 +33,19 @@ public class Record {
 	public String getQ_id() {
 		return q_id;
 	}
-	public void setQ_id(String q_id) {
-		this.q_id = q_id;
+	
+	public String getAnswer() {
+		return answer;
 	}
+
 	public String getResult() {
 		return result;
 	}
-	public void setResult(String result) {
-		this.result = result;
-	}
+
 	public String getTake() {
 		return take;
 	}
-	public void setTake(String take) {
-		this.take = take;
-	}
+
 	
 
 }
