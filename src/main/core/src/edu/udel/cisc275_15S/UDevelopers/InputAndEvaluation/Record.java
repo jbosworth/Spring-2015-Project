@@ -5,33 +5,20 @@ package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
  */
 public class Record {
 	//Include useful information to be stored
-	private String q_id; // Identification of question answered
-	private String answer; // The answer chosen
+	private String question; // The text of the question answered
+	private String answer; // The text of the answer chosen
 	private String result; // Was the answer correct?
 	private String take; // Was this their first, second... try?
 	
-	public Record(String q_id, String answer, String result, String take){
-		this.q_id = q_id;
+	public Record(String question, String answer, String result, String take){
+		this.question = question;
 		this.answer = answer;
 		this.result = result;
 		this.take = take;
 	}
 	
-	public String toString(){
-		String s = "";
-		s += q_id;
-		s += ", ";
-		s += answer;
-		s += ", ";
-		s += result;
-		s += ", ";
-		s += take;
-		s += "| \n"; // End of record- since \n doesn't work
-		return s;
-	}
-	
-	public String getQ_id() {
-		return q_id;
+	public String getQuestion() {
+		return question;
 	}
 	
 	public String getAnswer() {
