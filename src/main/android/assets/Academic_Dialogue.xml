@@ -1,4 +1,4 @@
-<Academic_Dialogue c1="Student" c2="Sibling">
+<Academic_Dialogue c1="Student" c2="Sibling" c3 ="" cnum="3">
 	<c1 text="Wow, it sounds like some of the classes you have to take are really hard. Is there any way you can get extra help outside of class?" num="1"></c1>
 	<c2 text="Yeah actually, there’s a bunch of tutoring services available on campus.  You can find any sort of tutor through the Office of Academic Enrichment if you prefer to meet with a tutor one-on-one, but there are also group tutoring sessions available, like the ones available at the ISE Lab Learning Community Center for freshman-year science and math courses. You can also go to the main department office for the class that you’re struggling with. For example, there’s a Physics Help Center and a Math Tutorial Lab, and if you need help in Chemistry, you can just go to the main office in Brown Lab to ask for a list of tutors for your class." num="2"></c2>
 	<c1 text="Woah, that’s a lot of tutors! Do you have to pay for them?" num="3"></c1>
