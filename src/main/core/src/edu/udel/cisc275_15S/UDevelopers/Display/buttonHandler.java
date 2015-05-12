@@ -7,7 +7,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 
-import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLReader;
 
 public class buttonHandler {
 
@@ -37,13 +36,16 @@ public class buttonHandler {
 		TextButton tb;
 		for(genericButton b : buttons) {
 			tb = b.getButton();
-			for(int i=0; i<3; i++) {
+			for(int i=0; i<buttons.size(); i++) {
 				stage.addActor(tb);
 			}
 		}
 	}
 	public void dispose() {
 		stage.dispose();
+		for (genericButton g : buttons) {
+			g.dispose();
+		}
 	}
 	
 	public void resize(int width,int height) {
@@ -73,5 +75,25 @@ public class buttonHandler {
 	
 	public void addButtons(genericButton button) {
 		this.buttons.add(button);
+	}
+	
+	public boolean isButtonClicked(int id) {
+		boolean clicked = false; 
+		for(genericButton g : buttons) {
+			if(g.getId() == id && g.isChecked()) {
+				clicked = true;
+			}
+		}
+		return clicked;
+	}
+	
+	public genericButton getButton(int id) {
+		genericButton button = null;
+		for(genericButton g : buttons) {
+			if(g.getId() == id) {
+				button = g;
+			}
+		}
+		return button;
 	}
 }

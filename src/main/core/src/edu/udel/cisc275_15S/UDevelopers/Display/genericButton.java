@@ -73,6 +73,10 @@ public class genericButton{
 		return button.isChecked();
 	}
 	
+	public void setChecked(boolean check) {
+		button.setChecked(check);
+	}
+	
 	public TextButton getButton() {
 		return this.button;
 	}
@@ -87,4 +91,9 @@ public class genericButton{
 		return this.identify;
 	}
 
+	public void dispose() {
+		buttonFont.dispose();
+		skin.dispose();
+		buttonAtlas.dispose();
+	}
 }
