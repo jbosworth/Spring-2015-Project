@@ -1,4 +1,4 @@
-<Student_Health_Dialogue c1="Student" c2="Sibling" c3="Student Health Clinic Assistant">
+<Student_Health_Dialogue c1="You" c2="Roommate" c3="Student Health Assistant" cnum="3">
 	<c3 text="Welcome to the Student Health Clinic! How can we help you today?" num="1"></c3>
 	<c1 text="I have a headache and stuffy nose…I think it might be a cold. Can I meet with a doctor without an appointment?" num="2"></c1>
 	<c3 text="Yes you can, but students prefer to make appointments ahead of time to eliminate the time they spend waiting. If you think you just have a cold though, I can redirect you to the self-care clinic." num="3"></c3>
