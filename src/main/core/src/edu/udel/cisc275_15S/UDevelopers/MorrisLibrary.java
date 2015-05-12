@@ -12,7 +12,7 @@ public class MorrisLibrary extends GameState{
 	SpriteBatch batch;
 	public MorrisLibrary(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.12 AM.png", "bob");
+		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.12 AM.png", "Library");
         this.batch=batch;
 	}
 	

@@ -23,7 +23,7 @@ public Map(GSM gsm, SpriteBatch batch){
 	
 }
 buttonHandler handle=buttonHandler.getInstance();
-Texture campus= new Texture(Gdx.files.internal("Campus Map-01 (3x4).jpg"));
+Texture campus= new Texture(Gdx.files.internal("Campus_Map.jpg"));
 Texture empty= new Texture("badlogic.jpg");
 Texture check= new Texture("CheckMark.png");
 

@@ -28,10 +28,12 @@ public class genericScreen implements Screen{
 	TextBox textbox;
 //	wordBank bank;
 	boolean changeText;
+	XMLReader reader;
 	public genericScreen(SpriteBatch batch, String background) {
 		this(batch,background,"");
 	}
-	public genericScreen(SpriteBatch batch, String background, String player) {
+	
+	public genericScreen(SpriteBatch batch, String background, String readfile) {
 		this.width = Gdx.graphics.getWidth();
 		this.height = Gdx.graphics.getHeight();
 		
@@ -39,10 +41,22 @@ public class genericScreen implements Screen{
 		this.background = new Texture(background);
 	
         this.handle = buttonHandler.getInstance();
-        this.textbox = new TextBox(batch);
+        this.handle.clear();
+        
+ 
 //        this.bank = new wordBank(batch);
+		
+		this.reader = XMLReader.getInstance();
+		reader.readFile(readfile + "_Dialogue.xml");
+		reader.arrange();
+//		System.out.println(reader.getDialogue().toString());
+		this.textbox = new TextBox(batch);
+        this.textbox.setQuestionFile(readfile + "_Questions.xml");
+		
+		
 		this.handle.setUpStage();
-		XMLReader.getInstance().readFile("Advisement_Dialogue.xml");
+		
+		
 	}
 	
 	@Override
@@ -104,33 +118,8 @@ public class genericScreen implements Screen{
 		
 	}
 	
-
-	/**
-	 * Creates word bank when notebook button is clicked
-	 */
-//	public void renderWordBank() {
-//		int words = 0;
-//		ArrayList<String> text = new ArrayList<String>();
-//		text.add("Text");
-//		text.add("Goes");
-//		text.add("Here");
-//		
-//		float x = bankDim[0];
-//		float y =  bankDim[1];
-//		float width =  bankDim[2];
-//		float height =  bankDim[3];
-//
-//		if (wordBankBook.isChecked()) {
-//			
-//			batch.begin();
-//			batch.draw(wordBank, x, y, width, height);
-//			for (String s : text) {
-//				bank.drawWrapped(batch, s, x + width*0.17f, y + height*0.875f - height*0.1f*words, width, BitmapFont.HAlignment.LEFT);
-//				words++;
-//			}
-//			batch.end();		
-//		}	
-//	}
-	
+	public TextBox getTextBox() {
+		return textbox;
+	}
 
 }

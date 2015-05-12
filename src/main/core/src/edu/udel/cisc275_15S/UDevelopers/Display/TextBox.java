@@ -44,10 +44,12 @@ public class TextBox {
 	String response;
 	String question;
 	String dialogue;
+	String questionFile;
 	boolean changeText;
 	int answered;
 	int mode; //0 = Dialogue, 1= Quiz, 2=Response, 3 = EndSectionMode
 	boolean endSection;
+	boolean readIn;
 	
 	public TextBox(SpriteBatch batch) {
 		this.width = Gdx.graphics.getWidth();
@@ -68,13 +70,16 @@ public class TextBox {
      	this.answered = -1;
      	this.handle = buttonHandler.getInstance();
      	this.reader = XMLReader.getInstance();
+     	this.readIn = true;
      	this.buttons = new ArrayList<genericButton>();
      	this.dialogueList = reader.getDialogue();
+     	System.out.println(reader.getDialogue().toString());
 		this.buttons.addAll(createBoxButtons());
 		this.handle.addButtons(buttons);
 		Answer answer = new Answer(0, 0, "", false);
 		this.endSection = false;
 //		handle.quizMode(true);
+		
 	}
 	/**
 	 * Renders the green translucent text box and the text inside of it
@@ -182,48 +187,55 @@ public class TextBox {
 	//Account for dialogue, questions, response modes
 	public void renderQuiz() {
 //		XMLReader reader = XMLReader.getInstance();
-//		reader.readFile("Student_Resources.xml");
-		
+		if (readIn) {
+			reader.readFile(questionFile);
+			readIn = false;
+			
+		}
 //		ArrayList<Answer> answers = reader.getAnswers();
-		
 
 		Question main = null;
-//		questions.add(new Question(0, 0, ""));
-		if (changeText) {
-			questions = reader.getQuestion();
-			main = (Question)(questions.remove(0));
-			question = main.getText();
-			changeText= false;
-		}
-		float x = rectDim[0];
-		float y =  rectDim[1];
-		float width =  rectDim[2];
-		float height =  rectDim[3];
-		float offset = width*0.025f;
-		//These are for displaying the answers in the correct positions
-		int h = 0;
-		
-		batch.begin();
-		//Display Question
-		font.drawWrapped(batch, question, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
-		for (int i=0; i<4; i++) {
-//				b =x + width*i , y + height*j, width, height;
-			font.drawWrapped(batch, ((Answer)(questions.get(i))).getText(), x + offset + (h)*width/2f, y + height*0.35f*(1+i%2),width/2f - offset);
-			h+=i%2;
-		}
-		
-		batch.end();
-		//Through the number of answer buttons
-		for(int i = 1; i <= 4; i++) {
-			if(handle.isButtonClicked(i)) {
-				mode = 2;
-				//Used for indexing 
-				answered = i -1;
-				handle.getButton(i).setChecked(false);
-				handle.quizMode(false);
-				changeText = true;
+//		if (reader.getQuestions().size() > 0) {
+			if (changeText) {
+//				System.out.println("Get Questions here");
+				questions = reader.getQuestion();
+				question = questions.remove(0).getText();
+				changeText= false;
 			}
-		}
+			float x = rectDim[0];
+			float y =  rectDim[1];
+			float width =  rectDim[2];
+			float height =  rectDim[3];
+			float offset = width*0.025f;
+			//These are for displaying the answers in the correct positions
+			int h = 0;
+			
+			batch.begin();
+			//Display Question
+			font.drawWrapped(batch, question, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
+			for (int i=0; i<4; i++) {
+	//				b =x + width*i , y + height*j, width, height;
+				font.drawWrapped(batch, ((Answer)(questions.get(i))).getText(), x + offset + (h)*width/2f, y + height*0.35f*(1+i%2),width/2f - offset);
+				h+=i%2;
+			}
+			
+			batch.end();
+			//Through the number of answer buttons
+			for(int i = 1; i <= 4; i++) {
+				if(handle.isButtonClicked(i)) {
+					mode = 2;
+					//Used for indexing 
+					answered = i -1;
+					handle.getButton(i).setChecked(false);
+					handle.quizMode(false);
+					changeText = true;
+				}
+			}
+//		}
+//		else {
+//			mode = 3;
+//			handle.quizMode(false);
+//		}
 	}
 	
 	public void renderResponse() {
@@ -235,14 +247,14 @@ public class TextBox {
 		float height =  rectDim[3];
 		float offset = width*0.025f;
 		
-		if(questions.size() == 0) {
-			mode = 3;
-		}
-		else if (changeText) {
+		
+		if (changeText) {
 			answer = (Answer) questions.get(answered);
 			response = reader.getResponse(answer);
 			System.out.println(response);
 			changeText = false;
+			
+			
 		}
 		batch.begin();
 		font.drawWrapped(batch, question, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
@@ -254,6 +266,10 @@ public class TextBox {
 			changeText = true;
 			handle.getButton(dialogueBox).setChecked(false);
 			mode = 0;
+			
+			if(reader.getQuestions().size() == 0) {
+				mode = 3;
+			}
 		}
 		
 	}
@@ -262,8 +278,18 @@ public class TextBox {
 		if(handle.isButtonClicked(dialogueBox)) {
 			this.endSection = true;
 		}
+		float x = rectDim[0];
+		float y =  rectDim[1];
+		float width =  rectDim[2];
+		float height =  rectDim[3];
+		float offset = width*0.025f;
+		String message = "Click in the box to return to the map";
+		batch.begin();
+		font.drawWrapped(batch, message, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
+		batch.end();
 	}
 	public ArrayList<genericButton> getButtons() {
+		
 		return buttons;
 	}
 	
@@ -280,5 +306,9 @@ public class TextBox {
 	
 	public boolean isEnded() {
 		return endSection;
+	}
+	
+	public void setQuestionFile(String file) {
+		this.questionFile = file;
 	}
 }

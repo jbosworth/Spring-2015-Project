@@ -14,7 +14,7 @@ Texture campus= new Texture("Screen Shot 2015-04-30 at 3.26.38 AM.png");
 	
 	public Academic(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.26.38 AM.png", "bob");
+		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.26.38 AM.png", "Academic");
 		this.batch=batch;
 	}
 

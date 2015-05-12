@@ -15,7 +15,7 @@ public class answerButton extends genericButton{
 		button.addListener(new ChangeListener() {
 			@Override
 			public void changed(ChangeEvent event, Actor actor) {
-				System.out.println("Clicked! Is checked: " + button.isChecked());
+//				System.out.println("Clicked! Is checked: " + button.isChecked());
 //				button.setText("Starting new game");
 //				g.setScreen( new GameScreen());
  

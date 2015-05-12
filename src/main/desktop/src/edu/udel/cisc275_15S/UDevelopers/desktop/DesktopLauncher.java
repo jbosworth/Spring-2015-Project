@@ -2,7 +2,7 @@ package edu.udel.cisc275_15S.UDevelopers.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import edu.udel.cisc275_15S.UDevelopers.UDiscover;
+import edu.udel.cisc275_15S.UDevelopers.Display.UDiscover;;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

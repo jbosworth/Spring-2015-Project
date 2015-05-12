@@ -11,26 +11,37 @@ public abstract class GameState {
 GSM gsm;
 genericScreen in;
 public boolean completed=false;
-Texture campus= new Texture("Home Screen (3x4)-2.jpg");
 
-SimpleButton b=new SimpleButton(campus, 0, 0, 100, 100);
-public abstract void update();
-public abstract void render();
-
-public void goback(){
-	if(Gdx.input.justTouched()&&b.clicked){
-		gsm.getgamestate(gsm.getstate()).completed=true;
-		gsm.setState(GSM.Map);
-		
+	//Texture campus= new Texture( Gdx.files.internal("Campus_Map.jpg"));
+	Texture campus;
+	SimpleButton b;
+	public GameState(){
+	
+		this.campus = new Texture("Campus_Map.jpg");
+		this.b= new SimpleButton(campus, 0, Gdx.graphics.getHeight()-100, 100, 100);
+	
+	
 	}
-}
+	public abstract void update();
+	public abstract void render();
 
-public void draw(SpriteBatch back){
-	b.update(Gdx.input.getX(), Gdx.input.getY());
-	back.begin();
-	this.b.render(back);
-	back.end();
-}
+	public void goback(){
+		if((Gdx.input.justTouched()&&b.clicked)|| in.getTextBox().isEnded()){
+			if( in.getTextBox().isEnded()) {
+				gsm.getgamestate(gsm.getstate()).completed=true;
+			}
+			
+			gsm.setState(GSM.Map);
+			
+		}
+	}
+	
+	public void draw(SpriteBatch back){
+		b.update(Gdx.input.getX(), Gdx.input.getY());
+		back.begin();
+		this.b.render(back);
+		back.end();
+	}
 
 
 }

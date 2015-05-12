@@ -12,7 +12,7 @@ public class DormRoom extends GameState{
 	Sprite sb= new Sprite(campus);
 	public DormRoom(GSM gsm,SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.46 AM.png", "bob");
+		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.46 AM.png", "Dorm");
 		this.batch=batch;
 
 	}

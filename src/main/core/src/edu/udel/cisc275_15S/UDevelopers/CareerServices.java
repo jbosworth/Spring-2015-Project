@@ -13,7 +13,7 @@ public class CareerServices extends GameState{
 	Sprite sb= new Sprite(campus);
 	public CareerServices(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.26.54 AM.png", "bob");
+		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.26.54 AM.png", "Career");
 		this.batch=batch;
 
 	}

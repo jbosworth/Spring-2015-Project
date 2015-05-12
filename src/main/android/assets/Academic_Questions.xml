@@ -144,7 +144,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect. There are drop-in tutoring sessions available in the ISE Lab."></Text>
+		<Text text="Incorrect. There are group tutoring sessions and walk-in hours available at the ISE Lab."></Text>
 	</response>
 	<question>
 		<Qid q_id="3"></Qid>

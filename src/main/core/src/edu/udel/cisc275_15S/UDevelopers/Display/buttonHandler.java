@@ -96,4 +96,8 @@ public class buttonHandler {
 		}
 		return button;
 	}
+	
+	public void clear() {
+		buttons.clear();
+	}
 }

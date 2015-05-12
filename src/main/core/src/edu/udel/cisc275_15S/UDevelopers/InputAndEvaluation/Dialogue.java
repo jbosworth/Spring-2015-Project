@@ -16,4 +16,8 @@ public class Dialogue extends Text {
 	public int getNum(){
 		return num;
 	}
+	
+	public String toString() {
+		return "" + num;
+	}
 }

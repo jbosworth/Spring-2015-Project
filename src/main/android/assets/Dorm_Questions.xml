@@ -41,7 +41,7 @@
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
 		<Text text="Seven"></Text>
-		<Bool correct="false"></Bool>
+		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="0"></Qid>

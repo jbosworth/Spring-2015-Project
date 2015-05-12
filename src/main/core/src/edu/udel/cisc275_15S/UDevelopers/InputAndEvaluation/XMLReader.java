@@ -41,7 +41,7 @@ public class XMLReader {
 	}
 	
 	public ArrayList<Dialogue> getDialogue(){
-		arrange();
+//		arrange();
 		return dialogue;
 	}
 	
@@ -151,6 +151,8 @@ public class XMLReader {
 				twoCharacters(root);
 			}
 		}
+		
+//		System.out.print(dialogue);
 	}
 		
 	private void twoCharacters(Element root){
@@ -193,15 +195,20 @@ public class XMLReader {
 	}
 	
 	//Sorts the dialogue in the correct order of characters' speech
-	private void arrange(){
+	public void arrange(){
 		ArrayList<Dialogue> temp = new ArrayList<Dialogue>();
 		Dialogue d = new Dialogue("", 0);
 		int max = dialogue.size();
-		for(int i=1; i<max + 1; i++){
-			int j=0;
+		int max_constant = dialogue.size();
+		int j;
+		System.out.println("Max Constant: " + max_constant);
+		for(int i=1; i<max_constant + 1; i++, max--){
+			j=0;
 			boolean found = false;
+//			System.out.println("New Search");
 			while(!found){
-				if(j<max || j>=0){
+				if(j<max && j>=0){
+//					System.out.println(dialogue.get(j).getNum());
 					if(dialogue.get(j).getNum() == i){
 						d = dialogue.remove(j);
 						found = true;
@@ -212,8 +219,10 @@ public class XMLReader {
 				j++;
 			}
 			temp.add(d);
-			max--;
 		}
-		dialogue = temp;
+//		System.out.println(temp);
+		
+		this.dialogue = temp;
+//		System.out.println(dialogue);
 	}
 }
