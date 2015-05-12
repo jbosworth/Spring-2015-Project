@@ -22,6 +22,8 @@ public class MorrisLibrary extends GameState{
 	@Override
 	public void render() {
 		in.render(0);
+		this.draw(batch);
+
 	}
 	
 	

@@ -13,6 +13,7 @@ public class DormRoom extends GameState{
 	public DormRoom(GSM gsm,SpriteBatch batch){
 		this.gsm=gsm;
 		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.46 AM.png", "bob");
+		this.batch=batch;
 
 	}
 
@@ -25,6 +26,7 @@ public class DormRoom extends GameState{
 	@Override
 	public void render() {
 		in.render(0);
+		this.draw(batch);
 
 }
 }

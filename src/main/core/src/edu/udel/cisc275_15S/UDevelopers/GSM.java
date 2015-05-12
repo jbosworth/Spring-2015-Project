@@ -20,7 +20,7 @@ public class GSM {
 	public static final int Map=6;
 	public static final int Start = 7;
 
-
+//The GSM switches between the gamestates
 	
 	public GSM(SpriteBatch batch){
 		this.batch=batch;
@@ -31,6 +31,7 @@ public class GSM {
      setState(currentstate);
 	}
 	
+	//initializes a state
 	public void loadState(int state){
         currentstate=state;
 		if(state==this.Academic){
@@ -67,10 +68,24 @@ public class GSM {
 		
 		
 	}
+	
+	//deletes a state
 	public void UnloadState(int state){
 		gameStates[state]=null;
 	}
 	
+	public GameState[] GameStates(){
+		return this.gameStates;
+	}
+	
+	public int getstate(){
+		return currentstate;
+	}
+	public GameState getgamestate(int i){
+		return gameStates[i];
+	}
+	
+	//changes the current state that the gsm is on
 	public void setState(int state){
 		
 
@@ -83,6 +98,7 @@ public class GSM {
 		//gameStates[currentstate].init();
 	}
 	
+	//updates whatever state is the current state
 	public void update(){
 		if( gameStates[currentstate]==null)
 			System.out.println("boop" + currentstate );
@@ -99,6 +115,7 @@ catch(Exception e){
 	public void render(){
 		update();
 		gameStates[currentstate].render();
+
 	}
 	
 	

@@ -14,6 +14,7 @@ public class CareerServices extends GameState{
 	public CareerServices(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
 		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.26.54 AM.png", "bob");
+		this.batch=batch;
 
 	}
 
@@ -27,6 +28,8 @@ public class CareerServices extends GameState{
 	@Override
 	public void render() {
 		in.render(0);
+		this.draw(batch);
+
 	}
 	
 }

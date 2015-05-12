@@ -13,6 +13,7 @@ Texture campus= new Texture("Advisment.png");
 	public Advisement(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
 		in= new genericScreen(batch,"Advisment.png", "bob");
+		this.batch=batch;
 
 	}
 
@@ -26,5 +27,7 @@ Texture campus= new Texture("Advisment.png");
 	@Override
 	public void render() {
 		in.render(0);
+		this.draw(batch);
+
 	}
 }
