@@ -1,4 +1,4 @@
-<Advisement_Dialogue c1="Student" c2="Sibling" c3="Advisor" cnum="3">
+<Advisement_Dialogue c1="You" c2="Sibling" c3="Advisor" cnum="3">
 	<c1 text="Thanks for meeting with me today! I have so many questions about which classes to take next semester." num="1"></c1>
 	<c3 text="No problem! That’s my job." num="2"></c3>
 	<c2 text="What else do you do as an advisor, if you don’t mind me asking?" num="3"></c2>
