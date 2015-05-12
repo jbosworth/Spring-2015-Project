@@ -1,4 +1,4 @@
-<Career_Dialogue c1="Student" c2="Teammate" c3="Career Services Receptionist" cnum="3">
+<Career_Dialogue c1="You" c2="Teammate" c3="Career Services Receptionist" cnum="3">
 	<c3 text="Welcome to the Career Service Center! How may I help you?" num="1"></c3>
 	<c2 text="I’m currently an Environmental Studies major, but I’m thinking I would like to switch into Nutrition instead. Could you help?" num="2"></c2>
 	<c3 text="Of course! Here at the Career Services Center, we provide answers to how different majors connect to possible careers. We may also direct you to your advisor or online workshops through the Office of Academic Enrichment for more help with seeing how a particular major might tie do different careers. The Undergraduate Research Office can also be helpful if you’re considering a career in research. Through the Student Portal located on our website, you can even explore your values, skills and interests through our Self Exploration tool, and you can check out possible careers pertaining to your major as well as graduate school options if you are considering an advanced degree." num="3"></c3>
