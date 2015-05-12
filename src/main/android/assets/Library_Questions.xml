@@ -127,7 +127,7 @@
 	<answer>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="A spending stipend and housing stipend are provided."></Text>
+		<Text text="A spending stipend and housing stipend are provided"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
