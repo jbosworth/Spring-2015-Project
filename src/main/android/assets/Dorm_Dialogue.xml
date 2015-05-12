@@ -1,4 +1,4 @@
-<Dorm_Dialogue c1="Student" c2="Roommate" cnum="2">
+<Dorm_Dialogue c1="You" c2="Roommate" cnum="2">
 	<c2 text="There are so many deadlines in college! How do you remember when everything happens?" num="1"></c2>
 	<c1 text="The Academic Calendar can be found on the UD Office of the University Registrar website. It lists all of the important dates for each semester, including winter and summer terms." num="2"></c1>
 	<c2 text="What kind of important dates?" num="3"></c2>
