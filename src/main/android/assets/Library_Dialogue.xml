@@ -1,18 +1,18 @@
-<Library_Dialogue c1="Sibling" c2="Librarian">
-	<c2 text="Thanks for stopping by the library today! Are there any more questions I can answer for you?" num="1"></c2>
+<Library_Dialogue c1="You" c2="Teammate" c3="Librarian" cnum="3">
+	<c3 text="Thanks for stopping by the library today! Are there any more questions I can answer for you?" num="1"></c3>
 	<c1 text="Yeah, actually. Studying on campus seems to be pretty fun, but do you have any study abroad programs through UD?" num="2"></c1>
-	<c2 text="We do! In fact, we have one of the highest ranked study abroad programs in the nation. For any semester, including winter and summer terms, you can choose from a variety of programs travelling to a variety of countries. You can even apply for trips which aren’t specifically in your major, as long as you have all the prerequisites which might be needed." num="3"></c2>
-	<c1 text="Is there a limit on how many times you study abroad?" num="4"></c1>
-	<c2 text="There isn’t a limit, but many students find it too expensive to study abroad every year." num="5"></c2>
+	<c3 text="We do! In fact, we have one of the highest ranked study abroad programs in the nation. For any semester, including winter and summer terms, you can choose from a variety of programs travelling to a variety of countries. You can even apply for trips which aren’t specifically in your major, as long as you have all the prerequisites which might be needed." num="3"></c3>
+	<c2 text="Is there a limit on how many times you study abroad?" num="4"></c2>
+	<c3 text="There isn’t a limit, but many students find it too expensive to study abroad every year." num="5"></c3>
 	<c1 text="Are there scholarships or anything available?" num="6"></c1>
-	<c2 text="Yes, any student who applies by a certain deadline is considered for merit-based and need-based scholarships." num="7"></c2>
+	<c3 text="Yes, any student who applies by a certain deadline is considered for merit-based and need-based scholarships." num="7"></c3>
 	<c1 text="How early is the deadline?" num="8"></c1>
-	<c2 text="It can be as early as 9 months before the program actually starts." num="9"></c2>
-	<c1 text="I guess that makes sense. Are there opportunities like that which aren’t so far away?" num="10"></c1>
-	<c2 text="Yes, one such program is the Service Learning Scholar Program in which a service-learning or community-based research project for ten weeks in the summer for a community agency in Delaware. Students in this program spend most of their time working in the community, but they spend a quarter of their time in academic reading, discussion, and reflection too. Projects can be conducted in any major, but a proposal must first be submitted about the intended project before the student is accepted into the program." num="11"></c2>
-	<c1 text="Is that volunteer work?" num="12"></c1>
-	<c2 text="It is volunteer work by nature, but the student receives a stipend for spending and a stipend for housing too." num="13"></c2>
+	<c3 text="It can be as early as 9 months before the program actually starts." num="9"></c3>
+	<c2 text="I guess that makes sense. Are there opportunities like that which aren’t so far away?" num="10"></c2>
+	<c3 text="Yes, one such program is the Service Learning Scholar Program in which a service-learning or community-based research project for ten weeks in the summer for a community agency in Delaware. Students in this program spend most of their time working in the community, but they spend a quarter of their time in academic reading, discussion, and reflection too. Projects can be conducted in any major, but a proposal must first be submitted about the intended project before the student is accepted into the program." num="11"></c3>
+	<c2 text="Is that volunteer work?" num="12"></c2>
+	<c3 text="It is volunteer work by nature, but the student receives a stipend for spending and a stipend for housing too." num="13"></c3>
 	<c1 text="That’s so cool. Are there other opportunities to do research on campus?" num="14"></c1>
-	<c2 text="Yes, the Center for Undergraduate Research has many opportunities in all research-oriented majors. You can work under a professor on his or her research project for pay, volunteer, or academic credit. The website for the Center of Undergraduate Research provides information about programs elsewhere in the country and even international research programs too. It also has information on doing a Senior Thesis and Summer Scholars Program, where a student conducts his or her own project – whether research or creative work – under the close supervision of a professor." num="15"></c2>
-	<c1 text="Wow, there are so many opportunities here! Thanks for answering all my questions." num="16"></c1>
+	<c3 text="Yes, the Center for Undergraduate Research has many opportunities in all research-oriented majors. You can work under a professor on his or her research project for pay, volunteer, or academic credit. The website for the Center of Undergraduate Research provides information about programs elsewhere in the country and even international research programs too. It also has information on doing a Senior Thesis and Summer Scholars Program, where a student conducts his or her own project – whether research or creative work – under the close supervision of a professor." num="15"></c3>
+	<c2 text="Wow, there are so many opportunities here! Thanks for answering all my questions." num="16"></c2>
 </Library_Dialogue>
