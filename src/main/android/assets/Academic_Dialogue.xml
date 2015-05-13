@@ -1,16 +1,21 @@
-<Academic_Dialogue c1="Student" c2="Sibling">
-	<c1 text="Wow, it sounds like some of the classes you have to take are really hard. Is there any way you can get extra help outside of class?" num="1"></c1>
-	<c2 text="Yeah actually, there’s a bunch of tutoring services available on campus.  You can find any sort of tutor through the Office of Academic Enrichment if you prefer to meet with a tutor one-on-one, but there are also group tutoring sessions available, like the ones available at the ISE Lab Learning Community Center for freshman-year science and math courses. You can also go to the main department office for the class that you’re struggling with. For example, there’s a Physics Help Center and a Math Tutorial Lab, and if you need help in Chemistry, you can just go to the main office in Brown Lab to ask for a list of tutors for your class." num="2"></c2>
-	<c1 text="Woah, that’s a lot of tutors! Do you have to pay for them?" num="3"></c1>
-	<c2 text="Well, if you get an individual tutor you do have to pay unless you get free tutoring through a special program. But a some of the group tutoring is free, and the Physics Help Center and Math Tutorial Lab are both free for all students!" num="4"></c2>
-	<c1 text="What if you struggle with writing? Are there writing tutors?" num="5"></c1>
-	<c2 text="Even better: there’s even a Writing Center on campus if you need help writing a paper." num="6"></c2>
-	<c1 text="How does the Writing Center work?" num="7"></c1>
-	<c2 text="It’s a free service for any member of the UD community. You just need to schedule an appointment, but you can only schedule two per week at most. When you go in, a consultant will help you with the assignment you need to work on by teaching you about sentence structure and how to edit a piece of writing." num="8"></c2>
-	<c1 text="So the consultant doesn’t actually proofread your paper for you?" num="9"></c1>
-	<c2 text="No, that’s not their job. They’re meant to help you learn how to be a better writer in general, not just for you to get an A on one paper. But there are other resources available depending on what you need help with. For example, there are separate writing assistance programs for students who are multilingual and students writing in a foreign language." num="10"></c2>
-	<c1 text="That’s pretty cool! But what if you just need help learning how to study for college test since it’s so different from high school?" num="11"></c1>
-	<c2 text="The website for the Office of Academic Enrichment has some Online Workshops that help you with study skills in general, like time management, studying strategies, test-taking, and goal setting. It even has a section to help you declare a major if you’re not sure what you want to study yet." num="12"></c2>
-	<c1 text="That's such a good idea. I have NO IDEA what I want to major in yet!" num="13"></c1>
-	<c2 text="Don't worry, you have time to figure that out!" num="14"></c2>
-</Academic_Dialogue>
+<Academic_Dialogue c1="You" c2="Teammate" c3="Professor" cnum="3">
+ 	<c2 text="Wow, it sounds like some of the classes we have to take are really hard. Is there any way we can get extra help outside of class?" num="1"></c2>
+	<c3 text="Yeah actually, there’s a bunch of tutoring services available on campus.  You can find any sort of tutor through the Office of Academic Enrichment if you prefer to meet with a tutor one-on-one," num="2"></c3>
+	<c3 text="but there are also group tutoring sessions available, like the ones available at the ISE Lab Learning Community Center for freshman-year science and math courses. You can also go to the main department office for the class that you’re struggling with." num="3"></c3> 
+	<c3 text="For example, there’s a Physics Help Center and a Math Tutorial Lab, and if you need help in Chemistry, you can just go to the main office in Brown Lab to ask for a list of tutors for your class." num="4"></c3>
+	<c2 text="Woah, that’s a lot of tutors! Do you have to pay for them?" num="5"></c2>
+	<c3 text="Well, if you get an individual tutor you do have to pay unless you get free tutoring through a special program. But a some of the group tutoring is free, and the Physics Help Center and Math Tutorial Lab are both free for all students!" num="6"></c3>
+	<c1 text="What if you struggle with writing? Are there writing tutors?" num="7"></c1>
+	<c3 text="Even better: there’s even a Writing Center on campus if you need help writing a paper." num="8"></c3>
+	<c1 text="How does the Writing Center work?" num="9"></c1>
+	<c3 text="It’s a free service for any member of the UD community. You just need to schedule an appointment, but you can only schedule two per week at most." num="10"></c3> 
+	<c3 text="When you go in, a consultant will help you with the assignment you need to work on by teaching you about sentence structure and how to edit a piece of writing." num="11"></c3>
+	<c2 text="So the consultant doesn’t actually proofread your paper for you?" num="12"></c2>
+	<c3 text="No, that’s not their job. They’re meant to help you learn how to be a better writer in general, not just for you to get an A on one paper. But there are other resources available depending on what you need help with." num="13"></c3> 
+	<c3 text="For example, there are separate writing assistance programs for students who are multilingual and students writing in a foreign language." num="14"></c3>
+	<c1 text="That’s pretty cool! But what if you just need help learning how to study for college test since it’s so different from high school?" num="15"></c1>
+	<c3 text="The website for the Office of Academic Enrichment has some Online Workshops that help you with study skills in general, like time management, studying strategies, test-taking, and goal setting." num="16"></c3>
+	<c3 text="It even has a section to help you declare a major if you’re not sure what you want to study yet." num="17"></c3>
+	<c2 text="That's such a good idea. I have NO IDEA what I want to major in yet!" num="18"></c2>
+	<c3 text="Don't worry, you have time to figure that out!" num="19"></c3>
+ </Academic_Dialogue>
