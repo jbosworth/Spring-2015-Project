@@ -26,23 +26,28 @@ public class XMLWriter {
 		String ename = getEpisode(episode);
 		String t = "" + take;
 		String path = ename + t + "_eval.xml";
+		BufferedWriter w;
+		
 		StringWriter writer = new StringWriter();
 		XmlWriter xml = new XmlWriter(writer);
+		w = null;
 		
 		try {
+			w = new BufferedWriter(new FileWriter(path, true));
 			XmlWriter root = xml.element(ename);// root element is episode
 			for(Record r : records){
 				root.element("Question").text(r.getQuestion()).pop()
 				.element("Answer").text(r.getAnswer()).pop()
 				.element("Result").text(r.getResult()).pop()
 				.element("Try").text(r.getTake()).pop();
+				System.out.print(root.toString());
 			}
 			xml.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		try (BufferedWriter w = new BufferedWriter(new FileWriter(path, true))){
+		try {
 			w.write(writer.toString());   
 		} catch (IOException e) {
 			e.printStackTrace();
