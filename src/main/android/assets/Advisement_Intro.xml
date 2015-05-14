@@ -1,0 +1,4 @@
+<Advisement_Intro>
+	<Message text="Welcome to your advisor's office. Your mission is to figure out what your advisor's role is and what your role is as an advisee. You will then be quizzed on this information, and you must get at least 75% of the answers correct to pass this mission." num="1"> </Message>
+	<Message text="If you get a lower score, you will need to come back here later, which will slow you down in the race! Good luck." num="2"> </Message>
+</Advisement_Intro>
