@@ -56,7 +56,7 @@
 	<answer>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="To determine if your financial package will cover counseling."></Text>
+		<Text text="To determine if your financial package will cover counseling"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
