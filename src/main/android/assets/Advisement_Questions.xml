@@ -35,7 +35,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Correct: each student should meet with his/her advisor each semester for help choosing and enrolling in classes."></Text>
+		<Text text="Correct: you should meet with your advisor each semester for help choosing and enrolling in classes."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -95,7 +95,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect: not all of these are primary responsibilities of an advisor."></Text>
+		<Text text="Incorrect: not all of these are responsibilities of an advisor."></Text>
 	</response>
 	<question>
 		<Qid q_id="2"></Qid>
@@ -111,7 +111,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Correct! Your advisor can help you in many ways, but they are not trained to listen to problems which are not related to your classes and your major."></Text>
+		<Text text="Correct! Your advisor can help you in many ways, but he/she is not trained to listen to problems which are not related to your classes and your major."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -152,47 +152,145 @@
 		<Text text="How often is it suggested for you to meet with an advisor?"></Text>
 	</question>
 	<answer>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
 		<Text text="Once a year"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
 		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
 		<Text text="Only when you want to switch your major"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
 		<Text text="Incorrect: your advisor can also help you choose classes to take and decide on a major. Try again!"></Text>
 	</response>
 	<answer>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="2"></Aid>
 		<Text text="Once a semester"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="2"></Aid>
 		<Text text="Correct! It is best to meet with your advisor once a semester to discuss which classes to take and to check that you're on track with your degree requirements."></Text>
 	</response>
 	<answer>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
 		<Text text="Three times a semester"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
-		<Qid q_id="2"></Qid>
+		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
 		<Text text="Incorrect: try again!"></Text>
+	</response>
+		<question>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Which is NOT one of the responsibilities of an advisor?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="To answer questions if you're considering changing your major"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect: your advisor can give you information on different majors to help you decide what to major in. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="To meet with you whenever you ever need to talk or have some personal issues to work through"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Correct, this is not a responsibility of an advisor! The Center for Counseling and Student Development is better suited to help you with personal issues."></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="To help you decide which classes to take"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Incorrect: your advisor can help you choose which courses to take to fulfill your degree requirements. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="To help you figure out what to do if you want to withdraw from a course you're struggling with"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Incorrect: your advisor can give you advice on what to do if you're having a difficult semester and help you rearrange your future semesters so you can still graduate as soon as possible."></Text>
+	</response>
+		<question>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Where do you meet with your advisor?"></Text>
+	</question>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Anywhere on campus"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="In any classroom building"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="At the Center for Academic Advisement"></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text="Incorrect. Try again!"></Text>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="In your advisor's office"></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text="Correct!"></Text>
 	</response>
 </Advisement_Questions>
