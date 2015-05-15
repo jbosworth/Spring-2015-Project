@@ -8,5 +8,11 @@
 	<c3 text="Yes, there are some issues students have that I cannot help with. What I help with has to do more with academics and career choices, but I’m not the right person to go to if you’re having a rough time adjusting to college or if you just really need to talk about your problems." num="7"></c3>
 	<c3 text="The Division of Student Life is better suited to help you find organizations on campus to join, and if you live on campus, your Resident Assistant is also very beneficial in helping you adjust to campus life and resolve any issues you have with your living situation." num="8"></c3> 
 	<c3 text="If you ever need to talk or have some personal issues you need to work through, the Center for Counseling and Student Development is an excellent resource." num="9"></c3>
-	<c2 text="Oh, I see now! I’ll let you get to your advisement meeting now while I go try out that UDairy I just saw." num="10"></c2>
+	<c1 text="Is there anything I have to do as an advisee?" num="10"></c1>
+	<c3 text="Certainly. Your main responsibility is to meet with me at least once a semester to make sure you're on track for obtaining your degree, but if you ever need help with your academic program, you should meet with me then too!" num="11"></c3>
+	<c2 text="What do you mean, by 'help with your academic program'?" num="12"></c2>
+	<c3 text="Say you need to withdraw from a class you're failing, or you're having a tough time taking too many hard classes at once. You can come to me with any questions about what to do and when to take which required classes so you can still graduate as soon as possible." num="13"></c3>
+	<c3 text="Or, if you need help deciding if you want to change your major, I can help answer your questions." num="14"></c3>
+	<c2 text="Oh, I see now! Thanks for answering all our questions. I think we're gonna stop by that UDairy truck we just saw on our way to our next mission." num="15"></c2>
+	<c3 text="Enjoy!" num="16"></c3>
 </Advisement_Dialogue>
