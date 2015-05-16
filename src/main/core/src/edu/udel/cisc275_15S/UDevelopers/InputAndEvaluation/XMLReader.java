@@ -21,9 +21,6 @@ public class XMLReader {
 	private ArrayList<Dialogue> dialogue = new ArrayList<Dialogue>();
 	private String message;
 	
-	//Constants
-	private static String TWO = "2";
-	
 	//Singleton XMLReader- only one reader necessary in game
 	private static final XMLReader INSTANCE = new XMLReader();
 	private XMLReader() {}
@@ -46,6 +43,7 @@ public class XMLReader {
 	
 	//public getters
 	public ArrayList<Dialogue> getDialogue(){
+		arrange();
 		return dialogue;
 	}
 	
@@ -95,12 +93,11 @@ public class XMLReader {
 	 * "Student_Resources.xml" is what should be passed to readFile().
 	 */
 	public void readFile(String file){
-		//clear lists and message
+		//clear lists
 		this.questions.clear();
 		this.answers.clear();
 		this.responses.clear();
 		this.dialogue.clear();
-		this.message = "";
 		
 		XmlReader reader = new XmlReader();
 		Element root = null;
@@ -153,15 +150,19 @@ public class XMLReader {
 			    Response r = new Response(q_id, a_id, text);
 			    this.responses.add(r);
 			}
-		}else if(file.contains("Dialogue")){//Retrieve dialogue from characters (there are 3 at most)
-			if(root.getAttribute("cnum").equals(TWO)){
-				twoCharacters(root);
-			}else{
+			//Retrieve dialogue from characters	
+		}else if(file.contains("Dialogue")){
+			if(root.getAttribute("cnum").equals("3")){
 				threeCharacters(root);
+			}else{
+				twoCharacters(root);
 			}
-		}else if(file.contains("intro") || file.contains("end")){
+			//Retrieve intro and end messages
+		}else if(file.contains("Intro") || file.contains("intro") || file.contains("end")){
 			Array<Element> m = root.getChildrenByName("Message");
-			message = m.get(0).getAttribute("text");
+			for(Element child : m){
+				message = child.getAttribute("text");
+			}
 		}
 	}
 		
@@ -205,16 +206,15 @@ public class XMLReader {
 	}
 	
 	//Sorts the dialogue in the correct order of characters' speech
-	public void arrange(){
+	private void arrange(){
 		ArrayList<Dialogue> temp = new ArrayList<Dialogue>();
 		Dialogue d = new Dialogue("", 0);
 		int max = dialogue.size();
-		int max_constant = dialogue.size();
-		for(int i=1; i<max_constant + 1; i++, max--){
+		for(int i=1; i<max + 1; i++){
 			int j=0;
 			boolean found = false;
 			while(!found){
-				if(j<max && j>=0){
+				if(j<max || j>=0){
 					if(dialogue.get(j).getNum() == i){
 						d = dialogue.remove(j);
 						found = true;
@@ -225,6 +225,7 @@ public class XMLReader {
 				j++;
 			}
 			temp.add(d);
+			max--;
 		}
 		dialogue = temp;
 	}
