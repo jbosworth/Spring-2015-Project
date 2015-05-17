@@ -205,7 +205,7 @@ public class XMLReader {
 	}
 	
 	//Sorts the dialogue in the correct order of characters' speech
-	private void arrange(){
+	public void arrange(){
 		ArrayList<Dialogue> temp = new ArrayList<Dialogue>();
 		Dialogue d = new Dialogue("", 0);
 		int max = dialogue.size();

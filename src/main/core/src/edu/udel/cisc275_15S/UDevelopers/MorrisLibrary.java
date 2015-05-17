@@ -8,11 +8,11 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import edu.udel.cisc275_15S.UDevelopers.Display.genericScreen;
 
 public class MorrisLibrary extends GameState{
-	Texture campus= new Texture("Screen Shot 2015-04-30 at 3.27.12 AM.png");
+	Texture campus= new Texture("Characters (Edited)-04.jpg");
 	SpriteBatch batch;
 	public MorrisLibrary(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.12 AM.png", "Library");
+		in= new genericScreen(batch,"Characters (Edited)-04.jpg", "Library");
         this.batch=batch;
 	}
 	
@@ -20,7 +20,7 @@ public class MorrisLibrary extends GameState{
 	
 
 	@Override
-	public void render() {
+	public void render(float delta) {
 		in.render(0);
 		this.draw(batch);
 

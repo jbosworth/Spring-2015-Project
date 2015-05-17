@@ -25,7 +25,7 @@ Texture campus= new Texture("Advisment.png");
 
 	
 	@Override
-	public void render() {
+	public void render(float delta) {
 		in.render(0);
 		this.draw(batch);
 

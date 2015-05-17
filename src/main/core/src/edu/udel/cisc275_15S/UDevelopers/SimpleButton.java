@@ -24,17 +24,18 @@ public class SimpleButton {
     public void update( float input_x, float input_y){
     	checkIfClicked(input_x,input_y);
     	
+    	
     }
     
     public void checkIfClicked (float ix, float iy) {
-    	
+    	if(Gdx.input.justTouched() ){
         if (ix > skin.getX() && ix < skin.getX() + skin.getWidth()) {
             if (iy > Gdx.graphics.getHeight()-skin.getY() -skin.getHeight()&& iy < Gdx.graphics.getHeight()-skin.getY() ) {
                 // the button was clicked, perform an action
                 System.out.println("Button clicked !");
                clicked=true;
             }
-        }
+        }}
     	
         else clicked=false;
        

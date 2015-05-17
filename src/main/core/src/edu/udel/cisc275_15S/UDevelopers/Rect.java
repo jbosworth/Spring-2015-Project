@@ -11,7 +11,7 @@ public class Rect {
 	float x, y;
 	boolean within;
 	int width, height;
-	Texture shape= new Texture("Empty.png");
+	Texture shape= new Texture("Advisment.png");
 	public Rect(float x, float y, int width, int height){
 		this.x=x;
 		this.y=y;

@@ -1,9 +1,11 @@
 package edu.udel.cisc275_15S.UDevelopers;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Gdx2DPixmap;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -12,13 +14,12 @@ import com.badlogic.gdx.utils.Array;
 import edu.udel.cisc275_15S.UDevelopers.Display.buttonHandler;
 import edu.udel.cisc275_15S.UDevelopers.Display.genericButton;
 
-
 public class Map extends GameState{
 	buttonHandler handle=buttonHandler.getInstance();
 	Texture campus= new Texture(Gdx.files.internal("Campus_Map.jpg"));
-	Texture empty= new Texture("badlogic.jpg");
+	Texture empty= new Texture("Empty.png");
 	Texture check= new Texture("CheckMark.png");
-	
+	int check_size=40;
 	SpriteBatch batch;
 	Boolean dormroom, academic, morris,carrer,advisement,health;
 	float width = Gdx.graphics.getWidth();
@@ -31,6 +32,11 @@ public class Map extends GameState{
 	Rect student_rect= new Rect(width*.42f, height*.1f, 120, 53);
 	Rect advise_rect= new Rect(width*.63f, height*.23f, 100, 110);
 	Rect career_rect= new Rect(width*.63f, height*.51f, 70, 100);
+	SimpleButton HelpButton= new SimpleButton(empty, 500, 400, 100, 100);
+	
+	private int time;
+	private String yourTimeName;
+	BitmapFont yourBitmapFontName;
 	
 	public Map(GSM gsm, SpriteBatch batch){
 		this.gsm=gsm;//System.out.println(Gdx.files.internal("libs/campus.jpg").file().getAbsolutePath());
@@ -38,14 +44,22 @@ public class Map extends GameState{
 		this.batch=batch;
 		init_rects();//initialize the rectangle
 		
+	    yourTimeName = "score: 0";
+	    yourBitmapFontName = new BitmapFont();
 	}
 
-	public void render(){
+	public void render(float delta){
+		DecimalFormat myFormat = new DecimalFormat("0.00");
+		yourTimeName= "Race Timer " ;
+		String myDoubleString = myFormat.format(delta);
+		yourTimeName= yourTimeName + myDoubleString;
 		batch.begin();
 		batch.draw(campus, 0,0,width,height);
-		
-		rects.get(5).render(batch);
+		HelpButton.render(batch);
 		drawcompleted(batch);
+		yourBitmapFontName.setColor(1.0f, 0.0f, 0.0f, 1.0f);
+		yourBitmapFontName.setScale(1.2f, 1.2f);;
+		yourBitmapFontName.draw(batch, yourTimeName, 40, 460); 
 		batch.end();	
 	}
 	
@@ -69,31 +83,31 @@ public class Map extends GameState{
 				continue;
 			}
 		    if(i==ac && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, acad_rect.x,acad_rect.y, 50, 50);
+		    	batch.draw(check, width*.315f, height*.635f, check_size, check_size);
 //		    	System.out.println("b"+ ac);
 		    }
 		    else if(i==student && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, student_rect.x,student_rect.y,50, 50);
+		    	batch.draw(check,width*.56f, height*.13f,check_size, check_size);
 //		    	System.out.println("b"+student);
 		
 		    }
 		    else if(i==advise && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, advise_rect.x,advise_rect.y,50, 50);
+		    	batch.draw(check,width*.7f, height*.295f,check_size, check_size);
 //		    	System.out.println("b"+advise);
 		
 		    }
 		    else if(i==dorm && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, dorm_rect.x,dorm_rect.y,50, 50);
+		    	batch.draw(check, width*.575f, height*.78f,check_size, check_size);
 //		    	System.out.println("b"+dorm);
 		
 		    }
 		    else if(i==career && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, career_rect.x,career_rect.y,50, 50);
+		    	batch.draw(check, width*.68f, height*.61f,check_size, check_size);
 //		    	System.out.println("b"+career);
 		
 		    }
 		    else if(i==lib && this.gsm.getgamestate(i).completed){
-		    	batch.draw(check, lib_rect.x,lib_rect.y,50, 50);
+		    	batch.draw(check, width*.23f, height*.375f,check_size, check_size);
 //		    	System.out.println("b");
 		    }
 		    i++;
@@ -104,6 +118,23 @@ public class Map extends GameState{
 	public void update(){
 		mouse_pos_check();
 		mouse_click_check();
+		HelpButton.checkIfClicked(Gdx.input.getX(),Gdx.input.getY());
+		
+		if(HelpButton.clicked)
+			gsm.setState(GSM.Help);
+		int i=0;
+		for(GameState GS: this.gsm.GameStates()){
+			if(GS == this.gsm.getgamestate(GSM.Map)){
+				break;
+			}
+			if(GS.completed){
+				i++;
+				if (i == 6){
+					this.gsm.setState(GSM.Finish);
+				}
+			}
+		
+		}
 		
 	}
 	

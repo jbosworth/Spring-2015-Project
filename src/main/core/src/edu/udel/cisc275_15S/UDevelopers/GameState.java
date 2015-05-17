@@ -23,15 +23,17 @@ public boolean completed=false;
 	
 	}
 	public abstract void update();
-	public abstract void render();
+	public abstract void render(float delta);
 
 	public void goback(){
-		if((Gdx.input.justTouched()&&b.clicked)|| in.getTextBox().isEnded()){
+		if(b.clicked|| in.getTextBox().isEnded()){
 			if( in.getTextBox().isEnded()) {
 				gsm.getgamestate(gsm.getstate()).completed=true;
 			}
 			
+			
 			gsm.setState(GSM.Map);
+			b.clicked=false;
 			
 		}
 	}

@@ -2,6 +2,7 @@ package edu.udel.cisc275_15S.UDevelopers;
 
 import java.awt.Graphics2D;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
@@ -10,7 +11,9 @@ public class GSM {
 	private GameState[] gameStates;
 	private int currentstate;//save the state you're in
 	SpriteBatch batch;
-	public static final int NUMGAMESTATES=8;
+	boolean maptime=false;
+	float stateTime=0;
+	public static final int NUMGAMESTATES=11;
 	public static final int CareerServices = 5;
 	public static final int Advisement = 4;
 	public static final int StudentHealth = 3;
@@ -19,6 +22,9 @@ public class GSM {
 	public static final int DormRoom = 0;
 	public static final int Map=6;
 	public static final int Start = 7;
+	public static final int Tutorial=8;
+	public static final int Finish=9;
+	public static final int Help=10;
 
 //The GSM switches between the gamestates
 	
@@ -26,7 +32,7 @@ public class GSM {
 		this.batch=batch;
     gameStates=new GameState[NUMGAMESTATES];
     this.loadState(this.Start);
-    this.loadState(this.Map);
+   
     currentstate=Start;    
      setState(currentstate);
 	}
@@ -41,6 +47,14 @@ public class GSM {
 			gameStates[state]=new Advisement(this, batch);
 
 		}
+		else if(state==this.Finish){
+			gameStates[state]=new Finish(this, batch);
+
+		}
+		else if(state==this.Tutorial){
+			gameStates[state]=new Tutorial(this, batch);
+
+		}
 		else if(state==this.CareerServices){
 			gameStates[state]=new CareerServices(this, batch);
 
@@ -51,6 +65,7 @@ public class GSM {
 		}
 		else if(state==this.Map){
 			gameStates[state]=new Map(this, batch);
+			maptime=true;
 
 		}
 		else if(state==this.MorrisLibrary){
@@ -65,8 +80,18 @@ public class GSM {
 			gameStates[state]=new Start(this, batch);
 
 		}
+		else if(state==this.Help){
+			gameStates[state]=new Help(this, batch);
+
+		}
 		
-		
+	}
+	
+	public void InitializeAllStates(){
+		for(int i = 0; i < 6; i++){
+			loadState(i);
+			
+		}
 	}
 	
 	//deletes a state
@@ -114,7 +139,11 @@ catch(Exception e){
 	
 	public void render(){
 		update();
-		gameStates[currentstate].render();
+		if(maptime && this.currentstate!=this.Help){
+		 float deltaTime = Gdx.graphics.getDeltaTime();
+		 this.stateTime += deltaTime;
+		}
+		gameStates[currentstate].render(this.stateTime);
 
 	}
 	

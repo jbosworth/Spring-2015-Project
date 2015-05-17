@@ -24,7 +24,7 @@ Texture campus= new Texture("Screen Shot 2015-04-30 at 3.26.38 AM.png");
 	}
 	
 	@Override
-	public void render() {
+	public void render(float delta) {
 		in.render(0);
 		this.draw(batch);
 

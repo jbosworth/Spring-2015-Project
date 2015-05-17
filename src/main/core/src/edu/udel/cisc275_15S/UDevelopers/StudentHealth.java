@@ -9,12 +9,12 @@ import edu.udel.cisc275_15S.UDevelopers.Display.genericScreen;
 
 public class StudentHealth extends GameState{
 
-	Texture campus= new Texture("Screen Shot 2015-04-30 at 3.28.27 AM.png");
+	Texture campus= new Texture("Characters (Edited)-05.jpg");
 	SpriteBatch batch;
 	
 	public StudentHealth(GSM gsm,SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Screen Shot 2015-04-30 at 3.27.12 AM.png", "Student_Health");
+		in= new genericScreen(batch,"Characters (Edited)-05.jpg", "Student_Health");
 		this.batch=batch;
 	}
 	@Override
@@ -24,7 +24,7 @@ public class StudentHealth extends GameState{
 	}
 
 	@Override
-	public void render() {
+	public void render(float delta) {
 		in.render(0);
 		this.draw(batch);
 

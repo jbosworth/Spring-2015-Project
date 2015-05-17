@@ -19,12 +19,13 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import edu.udel.cisc275_15S.UDevelopers.Display.genericButton;
 
 public class Start extends GameState{
-	Texture campus= new Texture("Home Screen (3x4)-2.jpg");
+	Texture campus= new Texture("Home Screen (3x4) copy copy.jpg");
 	Texture shape= new Texture("Empty.png");
+	Texture shape1= new Texture("Empty.png");
+	String username, password;
 	MytextListener listener = new MytextListener();
 	String message;
-    SimpleButton userbutton= new SimpleButton(shape, 330, 293, 115, 16);
-    SimpleButton passbutton= new SimpleButton(shape, 330, 250, 115, 16);
+    SimpleButton userbutton= new SimpleButton(shape, 370, 250, 200, 70);
 
 	SpriteBatch batch;
 	public boolean user=false, pass=false;
@@ -39,43 +40,42 @@ public class Start extends GameState{
 	
 	public void update(){
 		userbutton.update(Gdx.input.getX(), Gdx.input.getY());
-		passbutton.update(Gdx.input.getX(), Gdx.input.getY());
-		if(Gdx.input.justTouched() ){
+		//passbutton.update(Gdx.input.getX(), Gdx.input.getY());
+		
 			
 				if(userbutton.clicked){
-			Gdx.input.getTextInput(listener, "username", "username", "username");
-				user=true;}
-				Texture campus= new Texture("Home Screen (3x4)-2.jpg");
- if(passbutton.clicked){
-					Gdx.input.getTextInput(listener, "password", "password", "password");
-						pass=true;}
-				
-				
-		}
-		if(user&&pass)
-			this.gsm.setState(GSM.Map);
+					String a="";
+			Gdx.input.getTextInput(listener, "password", "password", "password");
+			password = listener.toString();
+			Gdx.input.getTextInput(listener, "username", a, "username");
+			username = listener.toString();
+			System.out.println("username=" + a  + "password=");
+				user=true;//}
+			//	Texture campus= new Texture("Home Screen (3x4)-2.jpg");
+ //if(passbutton.clicked){
+					
+					
+						}	
 		
+		if(user){
+			this.gsm.InitializeAllStates();
+			this.gsm.setState(GSM.Tutorial);
+		}
 		else
 			System.out.println(""+user+pass);
 		
-		
-			
-		
-		
-		
 	}
 	
-	
+
 	@Override
-	public void render() {
+	public void render(float delta) {
 		
 
 		batch.begin();
+		listener.canceled();
 		batch.draw(campus, 0,0,Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
 		userbutton.render(batch);
-		passbutton.render(batch);
-
-	   batch.end();
+	    batch.end();
 	}
 	
 	
