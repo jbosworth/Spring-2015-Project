@@ -8,6 +8,7 @@ public class XMLTest {
 		XMLReader reader = XMLReader.getInstance();
 		
 		//Test read of questions (with answers and responses) using Q&A from Academic_Questions.xml
+		// ***Note: XMLReader getters must not be commented out***
 		System.out.print("Reading in file: TestQA.xml... \n\n");
 		reader.readFile("TestQA.xml");
 		ArrayList<Question> q = reader.getQuestions();
@@ -52,11 +53,18 @@ public class XMLTest {
 		reader.readFile("TestDialogue.xml");
 		//This should hold all dialogue in proper order
 		ArrayList<Dialogue> d = reader.getDialogue();
-		//Read through to make sure it is
+		//Read through to make sure it is in order
 		//Names of characters should precede text of dialogue
 		for(Dialogue i : d){
 			System.out.print(i.getText()+ "\n");
 		}
+		
+		//Test arrange()
+		
+		//Test XMLWriter
+		//Test addRecord()
+		//Test writeFile()
+		//Test masterFile() if implemented
 		
 		
 	}

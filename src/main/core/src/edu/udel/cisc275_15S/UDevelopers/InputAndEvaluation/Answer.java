@@ -13,6 +13,7 @@ public class Answer extends Text {
 		this.correct = correct;
 	}
 	
+	///ToString methods
 	public String q_idToString(){
 		String s = "";
 		s += q_id;
@@ -31,36 +32,20 @@ public class Answer extends Text {
 		return s;
 	}
 
+	//Public getters
 	public int getQ_id() {
 		return q_id;
-	}
-
-	public void setQ_id(int q_id) {
-		this.q_id = q_id;
 	}
 
 	public int getA_id() {
 		return a_id;
 	}
 
-	public void setA_id(int a_id) {
-		this.a_id = a_id;
-	}
-
 	public String getText() {
 		return text;
-	}
-
-	public void setText(String text) {
-		this.text = text;
 	}
 	
 	public boolean isCorrect() {
 		return correct;
 	}
-
-	public void setCorrect(boolean correct) {
-		this.correct = correct;
-	}
-
 }

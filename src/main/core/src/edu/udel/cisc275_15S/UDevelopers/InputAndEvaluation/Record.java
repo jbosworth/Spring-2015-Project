@@ -1,7 +1,8 @@
 package edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation;
+
 /* Each record stores information about each question answered by user.
  * A record will be created every time a question is answered, and a
- * file will be updated.
+ * file will be created at the end of the game when XMLWriter.writeFile() is called.
  */
 public class Record {
 	//Include useful information to be stored
@@ -17,6 +18,7 @@ public class Record {
 		this.take = take;
 	}
 	
+	//Public getters
 	public String getQuestion() {
 		return question;
 	}
