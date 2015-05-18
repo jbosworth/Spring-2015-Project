@@ -4,8 +4,13 @@
 	<c2 text="What kind of important dates?" num="3"></c2>
 	<c1 text="Stuff like when is the last day you can withdraw from a class without it affecting your GPA and when finals begin and end." num="4"></c1>
 	<c2 text="When is the last day you can withdraw from a class without academic penalty?" num="5"></c2>
-	<c1 text="It’s always 9 weeks after the semester starts, but the class still shows up on your transcript with a W next to it for “Withdrawn”. However, the deadline to drop a class without getting a W on your transcript is the same deadline to add a new course: 2 weeks after the semester starts." num="6"></c1>
-<c2 text="How do you drop or add a new class?" num="7"></c2>
-<c1 text="You can do it all online through the UDSIS. You just use the same log in and password as for your UDel email, and you can access information about your class schedule, exams, and the courses you need for your major." num="8"></c1>
-<c1 text="You can also order transcripts, fill out a change of major form, register for classes, and other things like that. Let me show you how some of it works!" num="9"></c1>
+	<c1 text="It’s always 9 weeks after the semester starts. However, the deadline to drop or add a class for free is only 2 weeks after the semester starts." num="6"></c1>
+	<c2 text="What if I wanted to add or drop a class after the first two weeks of the semester?" num="7"></c2>
+	<c1 text="There is a $25 one-time processing if you need to change your schedule after the free drop/add period ends." num="8"></c1>
+	<c2 text="What if something serious happened where you got really sick when you couldn't finish the semester on time?" num="9"></c2>
+	<c1 text="In the case of illness, death of a relative, family problems or emotional difficulties, you can ask for special permission to change your schedule." num="10"></c1>
+	<c1 text="But you can't withdraw after the nine-week deadline just because you don't like your grade!" num="11"></c1>
+	<c2 text="That makes sense. So during the first two weeks, how do you drop or add a new class?" num="12"></c2>
+	<c1 text="You can do it all online through the UDSIS. You just use the same log in and password as for your UDel email, and you can access information about your class schedule, exams, and the courses you need for your major." num="13"></c1>
+	<c1 text="You can also order transcripts, fill out a change of major form, register for classes, and other things like that." num="14"></c1>
 </Dorm_Dialogue>
