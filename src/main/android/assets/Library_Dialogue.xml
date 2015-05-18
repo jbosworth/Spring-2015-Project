@@ -1,7 +1,7 @@
 <Library_Dialogue c1="You" c2="Teammate" c3="Librarian" cnum="3">
 	<c3 text="Thanks for stopping by the library today! Are there any questions I can answer for you?" num="1"></c3>
 	<c1 text="Yeah, actually. Studying on campus seems to be pretty fun, but do you have any study abroad trips through UD?" num="2"></c1>
-	<c3 text="We do! In fact, we have one of the highest ranked study abroad programs in the nation. For any semester, including winter and summer terms, you can choose from a variety of programs travelling to a variety of countries." num="3"></c3>
+	<c3 text="We do! In fact, we have one of the highest ranked study abroad programs in the nation. For any semester, including winter and summer terms, you can choose from a variety of programs and travel to a variety of countries." num="3"></c3>
 	<c3 text="You can even apply for trips which aren’t specifically in your major, as long as you have all the prerequisites which might be needed." num="4"></c3>
 	<c2 text="Is there a limit on how many times you study abroad?" num="5"></c2>
 	<c3 text="There isn’t a limit, but many students find it too expensive to study abroad every year." num="6"></c3>
