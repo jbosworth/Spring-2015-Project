@@ -12,5 +12,10 @@
 	<c1 text="But you can't withdraw after the nine-week deadline just because you don't like your grade!" num="11"></c1>
 	<c2 text="That makes sense. So during the first two weeks, how do you drop or add a new class?" num="12"></c2>
 	<c1 text="You can do it all online through the UDSIS. You just use the same log in and password as for your UDel email, and you can access information about your class schedule, exams, and the courses you need for your major." num="13"></c1>
-	<c1 text="You can also order transcripts, fill out a change of major form, register for classes, and other things like that." num="14"></c1>
+	<c1 text="You can also order transcripts, fill out a change of major form and other web forms, register for classes, check your grades, see your final exam schedule, access your finances, change your meal plan, and even see your housing assignment!" num="14"></c1>
+	<c2 text="Wow, that sounds like a great tool! Does UD have any other websites I should know about?" num="15"></c2>
+	<c1 text="Sure: websites like SAKAI and Canvas might be used by some of your professors, or your professor might use a different website. Usually there's some place online that contains all of the course information for each class." num="16"></c1>
+	<c2 text="How do SAKAI and Canvas work?" num="17"></c2>
+	<c1 text="You sign in to them using the same username and password as for your udel email account. They contain resources for your class like the syllabus and maybe some lecture notes. They may include a place where you can submit work online too." num="18"></c1>
+	<c2 text="Wow, I think that's enough information for now! Let's see how much we know about online resources." num="19"></c2>
 </Dorm_Dialogue>
