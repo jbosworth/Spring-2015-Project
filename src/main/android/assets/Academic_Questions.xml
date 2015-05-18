@@ -195,4 +195,102 @@
 		<Aid a_id="3"></Aid>
 		<Text text="Incorrect. Two of these resources are not designed for writing assistance."></Text>
 	</response>
+	<question>
+	<Qid q_id="4"></Qid>
+	<Aid a_id="1"></Aid>
+	<Text text=""></Text>
+	</question>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text=""></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text=""></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text=""></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text=""></Text>
+	</response>
+	<answer>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text=""></Text>
+	</response>
+		<question>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text=""></Text>
+	</question>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="0"></Aid>
+		<Text text=""></Text>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="1"></Aid>
+	<Text text=""></Text>ext>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text=""></Text>
+		<Bool correct="false"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="2"></Aid>
+		<Text text=""></Text>
+	</response>
+	<answer>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text=""></Text>
+		<Bool correct="true"></Bool>
+	</answer>
+	<response>
+		<Qid q_id="5"></Qid>
+		<Aid a_id="3"></Aid>
+		<Text text=""></Text>
+	</response>
 </Academic_Questions>
