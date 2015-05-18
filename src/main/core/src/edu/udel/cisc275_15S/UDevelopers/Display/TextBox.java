@@ -3,6 +3,7 @@ package edu.udel.cisc275_15S.UDevelopers.Display;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.Pixmap;
@@ -47,6 +48,8 @@ public class TextBox {
 	String dialogue;
 	String questionFile;
 	boolean changeText;
+	
+	int currentDialogue;
 	int answered;
 	int mode; //0 = Dialogue, 1= Quiz, 2=Response, 3 = EndSectionMode
 	boolean endSection;
@@ -68,6 +71,8 @@ public class TextBox {
      	this.question = "";
      	this.dialogue = "";
      	this.response = "";
+     	
+     	this.currentDialogue = 0;
      	this.mode = 0;
      	this.answered = -1;
      	this.handle = buttonHandler.getInstance();
@@ -80,6 +85,7 @@ public class TextBox {
 		this.handle.addButtons(buttons);
 		Answer answer = new Answer(0, 0, "", false);
 		this.endSection = false;
+		
 		
 	}
 	/**
@@ -157,11 +163,11 @@ public class TextBox {
 	public void renderDialogue() {
 //		XMLReader reader = XMLReader.getInstance();
 //		ArrayList<Dialogue> dialogueList = reader.getDialogue();
-		if(changeText && !dialogueList.isEmpty()) {
-			dialogue = dialogueList.remove(0).getText();
+		if(changeText && currentDialogue < dialogueList.size()) {
+			dialogue = dialogueList.get(currentDialogue).getText();
 			changeText = false;
 		}
-		else if(changeText && dialogueList.isEmpty()) {
+		else if(changeText && currentDialogue >= dialogueList.size()) {
 			mode = 1;
 			handle.quizMode(true);
 		}
@@ -174,9 +180,15 @@ public class TextBox {
 		font.drawWrapped(batch, dialogue, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
 		batch.end();
 	
-		if(handle.isButtonClicked(dialogueBox)) {
+		if(handle.isButtonClicked(dialogueBox) || Gdx.input.isKeyJustPressed(Input.Keys.RIGHT)) {
 			changeText = true;
 			handle.getButton(dialogueBox).setChecked(false);
+			currentDialogue++;
+		}
+		
+		else if(Gdx.input.isKeyJustPressed(Input.Keys.LEFT) && currentDialogue > 0) {
+			currentDialogue--;
+			changeText = true;
 		}
 		
 	}
@@ -232,11 +244,12 @@ public class TextBox {
 					changeText = true;
 				}
 			}
-//		}
-//		else {
-//			mode = 3;
-//			handle.quizMode(false);
-//		}
+
+			if (Gdx.input.isKeyJustPressed(Input.Keys.LEFT)) {
+				mode = 0;
+				currentDialogue = dialogueList.size() - 1;
+				handle.quizMode(false);
+			}
 	}
 	
 	public void renderResponse() {
@@ -311,5 +324,12 @@ public class TextBox {
 	
 	public void setQuestionFile(String file) {
 		this.questionFile = file;
+	}
+	
+	public void nextDialogue() {
+		currentDialogue++;
+	}
+	public void backDialogue() {
+		currentDialogue--;
 	}
 }

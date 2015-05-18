@@ -28,7 +28,7 @@ public class Map extends GameState{
 	int ac=1, student=3, advise=4, dorm=0, career=5, lib=2, numstates=6; 
 	Rect dorm_rect= new Rect(width*.4f, height*.7f, 130, 100);
 	Rect acad_rect= new Rect(width*.27f, height*.53f, 90, 95);
-	Rect lib_rect= new Rect(width*.22f, height*.22f, 100, 145);
+	Rect lib_rect= new Rect(width*.22f, height*.22f, 100, 138);
 	Rect student_rect= new Rect(width*.42f, height*.1f, 120, 53);
 	Rect advise_rect= new Rect(width*.63f, height*.23f, 100, 110);
 	Rect career_rect= new Rect(width*.63f, height*.51f, 70, 100);

@@ -14,7 +14,7 @@ public class StudentHealth extends GameState{
 	
 	public StudentHealth(GSM gsm,SpriteBatch batch){
 		this.gsm=gsm;
-		in= new genericScreen(batch,"Characters (Edited)-05.jpg", "Student_Health");
+		in= new genericScreen(batch,"Student_Health_testpic.jpg", "Student_Health");
 		this.batch=batch;
 	}
 	@Override

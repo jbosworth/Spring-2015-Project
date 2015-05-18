@@ -1,3 +1,4 @@
+package edu.udel.cisc275_15S.UDevelopers;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.graphics.Texture;
@@ -9,8 +10,8 @@ public class UDSIS {
 	Texture screen1= new Texture("");
 	
 	public UDSIS(){
-		for(int i=0; i<numPics; i++){
-			sprites.add(new Sprite)
-		}
+//		for(int i=0; i<numPics; i++){
+//			sprites.add(new Sprite)
+//		}
 	}
 }
