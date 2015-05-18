@@ -7,13 +7,13 @@
 	<answer>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="A writing center"></Text>
+		<Text text="A Writing Center"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect, a Writing Center IS available on campus!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -24,7 +24,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect, group tutoring IS available on campus!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -35,7 +35,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect, individual tutoring IS available on campus!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -46,7 +46,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Correct!"></Text>
+		<Text text="Correct! A Writing Center, group tutoring, and individual tutoring are all available on campus!"></Text>
 	</response>
 	<question>
 		<Qid q_id="1"></Qid>
@@ -73,7 +73,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect, this statement is true. Try again!"></Text>
+		<Text text="Incorrect: it IS true that each student is allowed to schedule up to two appointments at the University Writing Center per week."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -84,7 +84,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect, this statement is true. Try again!"></Text>
+		<Text text="Incorrect: a specialized writing assistance program IS available specifically for multilingual students!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -95,7 +95,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect, this statement is true. Try again!"></Text>
+		<Text text="Incorrect, walk-ins ARE accepted at The Math Tutorial Lab!"></Text>
 	</response>
 	<question>
 		<Qid q_id="2"></Qid>
@@ -154,13 +154,13 @@
 	<answer>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Your professor’s office hours"></Text>
+		<Text text="Your advisor's office"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect. Your professor is not the best person to go to for help improving your writing skills. Try again."></Text>
+		<Text text="Incorrect: your advisor is not trained to help you improve your writing skills."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. The Office of Academic Enrichment provides tutoring services, but not writing assistance. Try again."></Text>
+		<Text text="Incorrect. The Office of Academic Enrichment provides tutoring services, but not writing assistance."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -193,104 +193,104 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect. Two of these resources are not designed for writing assistance."></Text>
+		<Text text="Incorrect: two of these resources are not designed for writing assistance."></Text>
 	</response>
 	<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text=""></Text>
+	<Text text="Which of the following resources is NOT free for all students?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="The Writing Center"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect. The Writing Center IS free for all students!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Individual tutoring"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct: you must pay for an individual tutor unless you get free tutoring through a special program."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="The Physics Help Center"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Physics Help Center IS free for all students!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="The Math Tutorial Lab"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Math Tutorial Lab IS free for all students!"></Text>
 	</response>
 		<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Which of these topics does the Office of Academic Enrichment provide an online workshop for?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Time management"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Office of Academic Enrichment provides workshops for all of these topics!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Help declaring a major"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text=""></Text>ext>
+	<Text text="Incorrect: the Office of Academic Enrichment provides workshops for all of these topics!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Goal setting"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Office of Academic Enrichment provides workshops for all of these topics!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="All of the above"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! The Office of Academic Enrichment provides Online Workshops to help you with time management, studying strategies, test-taking, and goal setting"></Text>
 	</response>
 </Academic_Questions>
