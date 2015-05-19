@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>ext>
+	<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
