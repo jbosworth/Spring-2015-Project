@@ -198,51 +198,51 @@
 	<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text=""></Text>
+	<Text text="Which of the following can NOT be found in the Career Services Portal online?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Information on upcoming workshops"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: information on upcoming workshops CAN be found in the Career Services Portal."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Your grades"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! Your grades CANNOT be found in the Career Services Portal, but they can be found on UDSIS."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Advice for filling out grad school applications"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Career Services Portal DOES contain advice for filling out graduate school applications."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="A place to have your resume approved"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: there IS a place to have your resume approved in the Career Services Portal."></Text>
 	</response>
 		<question>
 		<Qid q_id="5"></Qid>
