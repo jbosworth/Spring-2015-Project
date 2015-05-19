@@ -73,7 +73,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -84,7 +84,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="This statement is incorrect. Try again!"></Text>
+		<Text text="This statement is incorrect: after the academic penalty deadline, you may NOT drop a class without a valid excuse."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -95,7 +95,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="This statement is incorrect. Try again!"></Text>
+		<Text text="This statement is incorrect."></Text>
 	</response>
 	<question>
 		<Qid q_id="2"></Qid>
@@ -247,50 +247,50 @@
 		<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Which of these websites is NOT used by professors to post important course information?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Sakai"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: this website is often used by professors to post important course information."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Canvas"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text=""></Text>ext>
+	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="A professor's own course webpage"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: professors sometimes have their own wepage where they post important course information."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="UDSIS"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! Course information can NOT be found on UDSIS. However, grades, class meeting time and place, and final exam time for a course CAN be found on UDSIS."></Text>
 	</response>
 </Dorm_Questions>
