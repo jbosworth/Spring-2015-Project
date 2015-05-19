@@ -198,7 +198,7 @@
 	<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text="Which of the following can NOT be found in the Career Services Portal online?"></Text>
+	<Text text="Which of the following can NOT be found in the Career Services Student Portal online?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -209,7 +209,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: information on upcoming workshops CAN be found in the Career Services Portal."></Text>
+		<Text text="Incorrect: information on upcoming workshops CAN be found in the Career Services Student Portal."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -220,7 +220,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Correct! Your grades CANNOT be found in the Career Services Portal, but they can be found on UDSIS."></Text>
+		<Text text="Correct! Your grades CANNOT be found in the Career Services Student Portal, but they can be found on UDSIS."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -231,7 +231,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: the Career Services Portal DOES contain advice for filling out graduate school applications."></Text>
+		<Text text="Incorrect: the Career Services Student Portal DOES contain advice for filling out graduate school applications."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -242,56 +242,56 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect: there IS a place to have your resume approved in the Career Services Portal."></Text>
+		<Text text="Incorrect: there IS a place to have your resume approved in the Career Services Student Portal."></Text>
 	</response>
 		<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="How does the Career Services Center provide help with writing your resume?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="By offering free resume reviews from 2:00 – 4:00 pm every week day"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="By holding resumes on workshops"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text=""></Text>ext>
+	<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="By reviewing resumes online through the Career Services Student Portal"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="All of the above"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! These are all ways that the Career Services Center provides resume writing assistance."></Text>
 	</response>
 </Academic_Questions>
 </Career_Questions>
