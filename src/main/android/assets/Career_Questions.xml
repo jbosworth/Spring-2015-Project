@@ -196,9 +196,9 @@
 		<Text text="Incorrect. Information about selecting and applying to graduate, medical, and law schools is available on the Career Services website."></Text>
 	</response>
 	<question>
-	<Qid q_id="4"></Qid>
-	<Aid a_id="1"></Aid>
-	<Text text="Which of the following can NOT be found in the Career Services Student Portal online?"></Text>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="Which of the following can NOT be found in the Career Services Student Portal online?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -244,7 +244,7 @@
 		<Aid a_id="3"></Aid>
 		<Text text="Incorrect: there IS a place to have your resume approved in the Career Services Student Portal."></Text>
 	</response>
-		<question>
+	<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
 		<Text text="How does the Career Services Center provide help with writing your resume?"></Text>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>ext>
+		<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
@@ -293,5 +293,4 @@
 		<Aid a_id="3"></Aid>
 		<Text text="Correct! These are all ways that the Career Services Center provides resume writing assistance."></Text>
 	</response>
-</Academic_Questions>
 </Career_Questions>
