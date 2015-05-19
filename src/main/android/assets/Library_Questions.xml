@@ -187,7 +187,7 @@
 	<answer>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Undergraduate Research Program projects"></Text>
+		<Text text="UD Undergraduate Research Program projects"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
@@ -247,50 +247,50 @@
 	<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Which of these can be found on the website for the Center of Undergraduate Research?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Information about programs elsewhere in the country and all over the world"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Information on doing a Senior Thesis"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text=""></Text>ext>
+	<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Information on the Summer Scholars Program"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="All of the above"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! All of this information can be found on the website for the Center of Undergraduate Research."></Text>
 	</response>
 </Library_Questions>
