@@ -1,4 +1,4 @@
 <Career_Intro>
 	<Message text="Welcome to the Career Services Center. Your task is to learn about all of the career and academic resources on campus." num="1"></Message>
-	<Message text="You will then be quizzed on this information to complete the mission. If you get less than 75% correct, you will need to come back to the Career Services Later and it will hurt your chances of winning the race! Good luck." num="2"> </Message>
+	<Message text="You will then be quizzed on this information in order to complete the mission. If you get fewer than 5 of the 6 questions correct, you will need to come back to the Career Services Center later and it will hurt your chances of winning the race! Good luck." num="2"> </Message>
 </Career_Intro>
