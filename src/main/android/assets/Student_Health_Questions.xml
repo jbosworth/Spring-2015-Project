@@ -116,7 +116,7 @@
 	<answer>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="There is a self-care clinic which provides free over-the-counter cold medicine and thermometers"></Text>
+		<Text text="There is a Self Care Wound Center"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
@@ -203,7 +203,7 @@
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="A women's clinic"></Text>
+		<Text text="A Nutritional Services Center"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
@@ -225,7 +225,7 @@
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="A men's clinic"></Text>
+		<Text text="A Men's Clinic"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
@@ -247,50 +247,50 @@
 	<question>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Which of these is an INCORRECT statement about the Self-Care Clinic?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="You must pass a checklist of cold symptoms to receive a cold packet"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: a checklist of cold systems IS given out first to check that the cold is not severe."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="It provides over-the-counter medicine and thermometers"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text=""></Text>ext>
+	<Text text="Incorrect: over-the-counter medicine and thermometers ARE provided through the Self-Care Clinic."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="It is free"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: the Self-Care Clinic, along with all Student Health Services, is covered under the Student Health Fee."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="You must have an appointment"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct, this is the false statement. You do NOT need an appointment to visit the Student Health Center or the Self-Care Clinic available there!"></Text>
 	</response>
 </Student_Health_Questions>
