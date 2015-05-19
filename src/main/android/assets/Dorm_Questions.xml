@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>ext>
+	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
