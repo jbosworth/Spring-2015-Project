@@ -196,53 +196,53 @@
 		<Text text="Incorrect! Try again."></Text>
 	</response>
 	<question>
-	<Qid q_id="4"></Qid>
-	<Aid a_id="1"></Aid>
-	<Text text=""></Text>
+		<Qid q_id="4"></Qid>
+		<Aid a_id="1"></Aid>
+		<Text text="What is NOT an acceptable reason to ask to have your schedule changed after the academic penalty deadline?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Family problems"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: family problems may be an acceptable reason to ask to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Poor academic performance"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct: poor academic performance is NOT an acceptable reason to have your schedule changed after the academic penalty deadlne."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Death of a relative"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: death of a relative may be accepted as a reason to ask to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Emotional difficulties"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: emotional difficulties may be an acceptable reason to ask to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 		<question>
 		<Qid q_id="5"></Qid>
@@ -293,5 +293,4 @@
 		<Aid a_id="3"></Aid>
 		<Text text=""></Text>
 	</response>
-</Academic_Questions>
 </Dorm_Questions>
