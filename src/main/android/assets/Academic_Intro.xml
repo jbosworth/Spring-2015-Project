@@ -1,4 +1,4 @@
 <Academic_Intro>
 	<Message text="Welcome to the Office of Academic Enrichment Center. Your mission is to discover information on all the tutoring and other academic services on campus." num="1"> </Message>
-	<Message text="Afterwards, you will be tested on the information you uncovered: you must answer at least 75% of the questions correctly, or you will need to come back to this building later, which will affect your place in the race!" num="2"></Message>
+	<Message text="Afterwards, you will be tested on the information you uncovered: you must answer at least 5/6 of the questions correctly, or you will need to come back to this building later, which will affect your place in the race!" num="2"></Message>
 </Academic_Intro>
