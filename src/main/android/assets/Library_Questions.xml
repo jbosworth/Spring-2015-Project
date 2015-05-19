@@ -2,7 +2,7 @@
 	<question>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Which of these is not a service of the Center for Undergraduate Research?"></Text>
+		<Text text="Which of these is NOT a service of the Center for Undergraduate Research?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -198,51 +198,51 @@
 	<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text=""></Text>
+	<Text text="How far before a study abroad trip starts might the application be due?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="2 years"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: study abroad trips are not planned this far ahead of time."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="9 months"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! Study abroad applications may be due as early as 9 months before a trip begins, so make sure to start looking at trips ahead of time."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="3 weeks"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: study abroad applications are never due that close to the start of the trip."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="1 day"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: study abroad applications are never due that close to the start of the trip."></Text>
 	</response>
 	<question>
 		<Qid q_id="5"></Qid>
