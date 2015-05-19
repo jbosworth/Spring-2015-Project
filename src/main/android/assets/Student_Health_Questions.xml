@@ -198,51 +198,51 @@
 		<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text=""></Text>
+	<Text text="Which of these can be found at the Student Health Center?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="A women's clinic"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: ALL of these resources can be found at the Student Health Center!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="All of the above"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text=""></Text>
+		<Text text="Correct! All of these resources can be found at the Student Health Center!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="A men's clinic"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: ALL of these resources can be found at the Student Health Center!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="STD testing"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text=""></Text>
+		<Text text="Incorrect: ALL of these resources can be found at the Student Health Center!"></Text>
 	</response>
 	<question>
 		<Qid q_id="5"></Qid>
