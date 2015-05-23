@@ -1,11 +1,11 @@
 <Student_Health_Dialogue c1="You" c2="Roommate" c3="Student Health Assistant" cnum="3">
 	<c3 text="Welcome to the Student Health Clinic! How can we help you today?" num="1"></c3>
-	<c1 text="I have a headache and stuffy nose…I think it might be a cold. Can I meet with a doctor without an appointment?" num="2"></c1>
-	<c3 text="Yes you can, but students prefer to make appointments ahead of time to eliminate the time they spend waiting. If you think you just have a cold though, I can redirect you to the self-care clinic." num="3"></c3>
+	<c1 text="If I had a cold, could I meet with a doctor without an appointment?" num="2"></c1>
+	<c3 text="Yes you can, but students prefer to make appointments ahead of time to eliminate the time they spend waiting. If you think you just have a cold though, I could redirect you to the self-care clinic." num="3"></c3>
 	<c1 text="What’s that?" num="4"></c1>
 	<c3 text="It’s a service here which gives you a checklist of cold symptoms. If the checklist determines that your cold is not severe, the Self-Care Clinic will provide you with a cold packet including over-the-counter medicine and thermometers for free. There is also a Self Care Wound Center here for minor wounds you can treat yourself." num="5"></c3>
 	<c2 text="What other free services are available?" num="6"></c2>
-	<c3 text="We have a Women’s Clinic and a Men’s Clinic, STD testing, and more. All are covered by the Student Health Fee. There’s even a Wart Clinic and a Nutritional Services center." num="7"></c3>
+	<c3 text="We have a Women’s Clinic and a Men’s Clinic, free STD testing, and more. All are covered by the Student Health Fee. There’s even a Wart Clinic and a Nutritional Services center." num="7"></c3>
 	<c2 text="What if you have emotional issues? Is there somewhere you can go to talk with someone?" num="8"></c2>
 	<c3 text="Yes, there is the Center for Counseling and Student Development located upstairs in Perkins Student Center. Before you start regular sessions, they will schedule you for an assessment, or screening interview. The purpose of this is to see what kind of help you need. If the issue involves others, group therapy may be suggested. If the issue extends beyond the services at the Counseling Center, they will refer you to other services in the area. But students are never turned down from counseling if they feel that they need it." num="9"></c3>
 	<c1 text="How much does that cost?" num="10"></c1>
@@ -16,5 +16,5 @@
 	<c3 text="Yes, the University of Delaware Police patrol the campus and its outskirts to enforce laws and protect students. They send out UD Alerts whenever incidents occur on or near campus that they feel students should be aware about. They also provide Physical Self Defense classes and Sexual Assault Prevention and Education workshops. There’s even an app you can download on your phone called “LiveSafe” which allows police to track your location when you feel unsafe walking at night. It also allows you to connect with police via text messages." num="15"></c3>
 	<c1 text="Should I use this app if I’m in an emergency situation?" num="16"></c1>
 	<c3 text="If it’s an emergency, call 911 if possible. For non-emergencies, the on-campus number to call is (302) 831-2222. The LiveSafe app is more geared towards awareness and prevention." num="17"></c3>
-	<c1 text="Oh, I see. Well you’ve been a great help! I’ll let you get back to work while I go check out the Self-Care Clinic." num="18"></c1>	
+	<c1 text="Oh, I see. Well you’ve been a great help! I’ll let you get back to work." num="18"></c1>	
 </Student_Health_Dialogue>
