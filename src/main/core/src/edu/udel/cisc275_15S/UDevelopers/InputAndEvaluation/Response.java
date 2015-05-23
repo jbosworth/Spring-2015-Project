@@ -11,7 +11,6 @@ public class Response extends Text {
 		this.text = text;
 	}
 	
-	//ToString methods
 	public String q_idToString(){
 		String s = "";
 		s += q_id;
@@ -24,7 +23,6 @@ public class Response extends Text {
 		return s;
 	}
 
-	//Public getters
 	public int getQ_id() {
 		return q_id;
 	}

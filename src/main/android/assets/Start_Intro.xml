@@ -1,0 +1,5 @@
+<Start_Intro>
+	<Message text="Congratulations! You have been chosen as a contestant for UDiscover, a competition in which 5 teams of two complete missions around the University of Delaware campus to prove their knowledge about on-campus resources." num="1"></Message>
+	<Message text="Your goal is to complete each mission as fast as you can: in order to complete a mission, you must discover all important information in the target building, then answer at least 5 out of the 6 questions correctly on the mission's trivia game." num="2"></Message>
+	<Message text="If you answer fewer than 5 questions correctly, you need to retry the mission, which jeopardizes your position in the race! The first team to complete all six missions wins the grand title of Freshman Supreme. Begin by choosing a partner." num="3"></Message>
+</Start_Intro>

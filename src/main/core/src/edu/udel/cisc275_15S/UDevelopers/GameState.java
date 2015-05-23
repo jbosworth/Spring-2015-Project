@@ -27,8 +27,11 @@ public boolean completed=false;
 
 	public void goback(){
 		if(b.clicked|| in.getTextBox().isEnded()){
-			if( in.getTextBox().isEnded()) {
+			if( in.getTextBox().isEnded() && in.getTextBox().isPassed()) {
 				gsm.getgamestate(gsm.getstate()).completed=true;
+			}
+			else if (in.getTextBox().isEnded() && !in.getTextBox().isPassed()) {
+				in.getTextBox().restart();
 			}
 			
 			

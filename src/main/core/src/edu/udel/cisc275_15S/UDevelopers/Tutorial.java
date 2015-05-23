@@ -12,10 +12,10 @@ public class Tutorial extends GameState{
 	Texture teammates= new Texture("4 Named Characters-01.jpg");
 	Texture selectBox= new Texture("Empty.png");
 	ArrayList<SimpleButton> buttons= new ArrayList<SimpleButton>();
-	SimpleButton person1L= new SimpleButton(selectBox, 50, 0, 100, 500);
-	SimpleButton person2= new SimpleButton(selectBox, 200, 0, 100, 500);
-	SimpleButton person3= new SimpleButton(selectBox, 350, 0, 100, 500);
-	SimpleButton person4R= new SimpleButton(selectBox, 500, 0, 100, 500);
+	SimpleButton person1L= new SimpleButton(selectBox, 50, 100, 100, 500);
+	SimpleButton person2= new SimpleButton(selectBox, 200, 100, 100, 500);
+	SimpleButton person3= new SimpleButton(selectBox, 350, 100, 100, 500);
+	SimpleButton person4R= new SimpleButton(selectBox, 500, 100, 100, 500);
     boolean selected=false;
 	
 	public Tutorial(GSM gsm, SpriteBatch batch){
@@ -25,7 +25,7 @@ public class Tutorial extends GameState{
 		buttons.add(person2);
 		buttons.add(person3);
 		buttons.add(person4R);
-		this.in= new genericScreen(batch,"Start-02.jpg","Academic");
+		this.in= new genericScreen(batch,"Start-02.jpg","Start");
 
 
 	}
@@ -45,13 +45,14 @@ public class Tutorial extends GameState{
 	
 	public void render(float delta){
 		if(!selected){
-		batch.begin();
-		
-		batch.draw(teammates, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-		for(SimpleButton s: buttons){
-			s.render(batch);}
-		
-		batch.end();}
+			batch.begin();
+			
+			batch.draw(teammates, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
+			for(SimpleButton s: buttons){
+				s.render(batch);}
+			
+			batch.end();
+		}
 		else{
 			in.render(0);
 		}

@@ -11,18 +11,16 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.*;
 import com.badlogic.gdx.utils.XmlReader.Element;
 
-//This class is used by the GUI to read in dialogue and Q&A
+//This class is used by the GUI to read in dialogue, Q&A, and other messages
 public class XMLReader {
-	//Store questions, answers, and responses in lists to be retrieved by GUI through
-	//the use of special functions.
+	//Store questions, answers, responses, and dialogue in lists 
+	//to be retrieved by GUI through the use of special functions.
 	private ArrayList<Question> questions = new ArrayList<Question>();
 	private ArrayList<Answer> answers = new ArrayList<Answer>();
 	private ArrayList<Response> responses = new ArrayList<Response>();
 	private ArrayList<Dialogue> dialogue = new ArrayList<Dialogue>();
-	private String message;
-	
-	//Constants
-	private static constant String TWO = "2";
+	//String for intro or end messages
+	private String message = "";
 	
 	//Singleton XMLReader- only one reader necessary in game
 	private static final XMLReader INSTANCE = new XMLReader();
@@ -31,7 +29,7 @@ public class XMLReader {
 		return INSTANCE;
 	}
 	
-	//private getters for use by special functions (change to public for testing/private for game release)
+	// public getters for testing- commented for release
 	public ArrayList<Question> getQuestions(){
 		return questions;
 	}
@@ -43,9 +41,11 @@ public class XMLReader {
 	public ArrayList<Response> getResponses(){
 		return responses;
 	}
+
 	
 	//public getters
 	public ArrayList<Dialogue> getDialogue(){
+		arrange();//put dialogue in order
 		return dialogue;
 	}
 	
@@ -58,21 +58,21 @@ public class XMLReader {
 	//Question, Answer, Answer, Answer, Answer
 	public ArrayList<Text> getQuestion(){
 		ArrayList<Text> question = new ArrayList<Text>();
-		Random r1 = new Random();
-		Random r2 = new Random();
-		if(questions.size() != 0){
-			Question q = questions.remove(r1.nextInt(questions.size()));
+		Random r1 = new Random();//random for question
+		Random r2 = new Random();//random for answers
+		if(this.questions.size() != 0){
+			Question q = this.questions.remove(r1.nextInt(questions.size()));
 			question.add(q);
 			ArrayList<Answer> temp = new ArrayList<Answer>();
-			while(answers.size() != 0){
-				Answer a = answers.remove(r2.nextInt(answers.size()));
+			while(this.answers.size() != 0){//randomize answers for question
+				Answer a = this.answers.remove(r2.nextInt(this.answers.size()));
 				if(a.getQ_id() == q.getQ_id()){
 					question.add(a);
 				}else{
 					temp.add(a);
 				}
 			}
-			for(Answer a : temp){
+			for(Answer a : temp){//return unrelated answers back to the list
 				this.answers.add(a);
 			}
 		}
@@ -82,7 +82,7 @@ public class XMLReader {
 	// Get response to selected answer @code a, return the text of the response
 	public String getResponse(Answer a){
 		String result="";
-		for(Response r : responses){
+		for(Response r : this.responses){
 			if( (r.getQ_id() == a.getQ_id()) && (r.getA_id() == a.getA_id() ) ){
 				result = r.getText();
 			}
@@ -90,8 +90,8 @@ public class XMLReader {
 		return result;
 	}
 	
-	/* Reads from a given XML file. It parses and stores questions, answers, responses, and dialogue
-	 * within the XMLReader. @param file should be the name of the input file. For example, 
+	/* Reads from a given XML file. It parses and stores questions, answers, responses, dialogue,
+	 * and messages within the XMLReader. @param file should be the name of the input file. For example, 
 	 * "Student_Resources.xml" is what should be passed to readFile().
 	 */
 	public void readFile(String file){
@@ -100,10 +100,10 @@ public class XMLReader {
 		this.answers.clear();
 		this.responses.clear();
 		this.dialogue.clear();
-		this.message.clear();
+		this.message = "";
 		
 		XmlReader reader = new XmlReader();
-		javax.swing.text.html.parser.Element root = null;
+		Element root = null;
 		try {
 			root = reader.parse(Gdx.files.internal(file));
 		} catch (IOException e) {
@@ -153,18 +153,23 @@ public class XMLReader {
 			    Response r = new Response(q_id, a_id, text);
 			    this.responses.add(r);
 			}
-		}else if(file.contains("Dialogue")){//Retrieve dialogue from characters (there are 3 at most)
-			if(root.getAttribute("cnum").equals(TWO)){
-				twoCharacters(root);
-			}else{
+			//Retrieve dialogue from characters	
+		}else if(file.contains("Dialogue")){
+			if(root.getAttribute("cnum").equals("3")){
 				threeCharacters(root);
+			}else{
+				twoCharacters(root);
 			}
-		}else if(file.contains("intro") || file.contains("end")){
+			//Retrieve intro and end messages
+		}else if(file.contains("Intro") || file.contains("intro") || file.contains("end") || file.contains("pass") || file.contains("retake")){
 			Array<Element> m = root.getChildrenByName("Message");
-			message = m.get(0).getAttribute("text");
+			for(Element child : m){
+				this.message += child.getAttribute("text");
+			}
 		}
 	}
-		
+	
+	//Called if dialogue file has two characters
 	private void twoCharacters(Element root){
 		Array<Element> c1 = root.getChildrenByName("c1");
 		String n1 = root.getAttribute("c1");// get name of character
@@ -189,6 +194,7 @@ public class XMLReader {
 		}
 	}
 	
+	//Called if dialogue file has three characters
 	private void threeCharacters(Element root){
 		twoCharacters(root);
 		
@@ -228,4 +234,5 @@ public class XMLReader {
 		}
 		dialogue = temp;
 	}
+
 }

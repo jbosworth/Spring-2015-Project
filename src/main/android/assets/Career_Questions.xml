@@ -13,7 +13,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect. The Career Services Center DOES provide resources which help explain how your major connects with possible careers."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -24,7 +24,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. Undergraduate research can help you see what a career in research might be like."></Text>
+		<Text text="Incorrect. Undergraduate research can help you see what a career in research might be like. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -35,7 +35,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Online workshops through the Office of Academic Enrichment can help explain you decide on a major and future career."></Text>
+		<Text text="Incorrect. Online workshops through the Office of Academic Enrichment can help explain you decide on a major and future career. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -111,7 +111,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect. The Career Services Center provides this resource and more."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -122,7 +122,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. The Career Services Center provides this resource and more."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -133,7 +133,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. The Career Services Center provides this resource and more."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. You may bring in your resume to receive feedback from Career Services staff from Monday-Friday from  2:00-4:00 pm."></Text>
+		<Text text="Incorrect. You may bring in your resume to receive feedback from Career Services staff from Monday-Friday from  2:00 - 4:00 pm."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -252,7 +252,7 @@
 	<answer>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="By offering free resume reviews from 2:00–4:00 pm every week day"></Text>
+		<Text text="By offering free resume reviews from 2:00 – 4:00 pm every week day"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>
+		<Text text="Incorrect: this is not the only way that the Career Services Center provides help with writing your resume!"></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>

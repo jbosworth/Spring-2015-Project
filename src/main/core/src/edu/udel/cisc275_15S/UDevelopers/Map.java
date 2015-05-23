@@ -13,6 +13,7 @@ import com.badlogic.gdx.utils.Array;
 
 import edu.udel.cisc275_15S.UDevelopers.Display.buttonHandler;
 import edu.udel.cisc275_15S.UDevelopers.Display.genericButton;
+import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLWriter;
 
 public class Map extends GameState{
 	buttonHandler handle=buttonHandler.getInstance();
@@ -51,14 +52,14 @@ public class Map extends GameState{
 	public void render(float delta){
 		DecimalFormat myFormat = new DecimalFormat("0.00");
 		yourTimeName= "Race Timer " ;
-		String myDoubleString = myFormat.format(delta);
-		yourTimeName= yourTimeName + myDoubleString;
+		String myDoubleString = myFormat.format(delta%60);
+		yourTimeName= yourTimeName + (int)(delta/60)+":"+myDoubleString;
 		batch.begin();
 		batch.draw(campus, 0,0,width,height);
 		HelpButton.render(batch);
 		drawcompleted(batch);
 		yourBitmapFontName.setColor(1.0f, 0.0f, 0.0f, 1.0f);
-		yourBitmapFontName.setScale(1.2f, 1.2f);;
+		yourBitmapFontName.setScale(1.2f, 1.2f);
 		yourBitmapFontName.draw(batch, yourTimeName, 40, 460); 
 		batch.end();	
 	}
@@ -131,6 +132,7 @@ public class Map extends GameState{
 				i++;
 				if (i == 6){
 					this.gsm.setState(GSM.Finish);
+//					XMLWriter.getInstance().writeFile();
 				}
 			}
 		

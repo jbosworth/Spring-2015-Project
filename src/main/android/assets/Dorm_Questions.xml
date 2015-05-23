@@ -116,7 +116,7 @@
 	<answer>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Nine"></Text>
+		<Text text="Eight"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>
+	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>ext>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>

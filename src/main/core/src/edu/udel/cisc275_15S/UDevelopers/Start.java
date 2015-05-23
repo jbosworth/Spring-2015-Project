@@ -17,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.ChangeEvent;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 import edu.udel.cisc275_15S.UDevelopers.Display.genericButton;
+import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLWriter;
 
 public class Start extends GameState{
 	Texture campus= new Texture("Home Screen (3x4) copy copy.jpg");
@@ -45,11 +46,24 @@ public class Start extends GameState{
 			
 				if(userbutton.clicked){
 					String a="";
-			Gdx.input.getTextInput(listener, "password", "password", "password");
-			password = listener.toString();
+			Gdx.input.getTextInput(listener, "password", a, "password");
+			
+				
 			Gdx.input.getTextInput(listener, "username", a, "username");
-			username = listener.toString();
-			System.out.println("username=" + a  + "password=");
+			
+			while(listener.text==null)
+				System.out.println("no input");
+			String h=listener.text;
+			username = listener.text;
+
+			while(h==listener.text)
+				System.out.println("no input");
+			password = listener.text;
+			
+			
+			XMLWriter.getInstance().setPassword(password);
+			XMLWriter.getInstance().setUsername(username);
+
 				user=true;//}
 			//	Texture campus= new Texture("Home Screen (3x4)-2.jpg");
  //if(passbutton.clicked){
@@ -61,8 +75,8 @@ public class Start extends GameState{
 			this.gsm.InitializeAllStates();
 			this.gsm.setState(GSM.Tutorial);
 		}
-		else
-			System.out.println(""+user+pass);
+//		else
+//			System.out.println(""+user+pass);
 		
 	}
 	

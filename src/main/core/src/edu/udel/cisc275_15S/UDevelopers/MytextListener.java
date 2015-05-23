@@ -7,10 +7,11 @@ import com.badlogic.gdx.scenes.scene2d.EventListener;
 
 public class MytextListener implements TextInputListener{
 
-
+public String text;
 	@Override
 	public void input(String text) {
-		// TODO Auto-generated method stub
+		System.out.println("listener="+text);
+		this.text=text;// TODO Auto-generated method stub
 		
 	}
 

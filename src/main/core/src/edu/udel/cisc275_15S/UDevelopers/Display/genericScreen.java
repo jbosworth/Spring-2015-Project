@@ -29,9 +29,6 @@ public class genericScreen implements Screen{
 //	wordBank bank;
 	boolean changeText;
 	XMLReader reader;
-	public genericScreen(SpriteBatch batch, String background) {
-		this(batch,background,"");
-	}
 	
 	public genericScreen(SpriteBatch batch, String background, String readfile) {
 		this.width = Gdx.graphics.getWidth();
@@ -47,13 +44,19 @@ public class genericScreen implements Screen{
 //        this.bank = new wordBank(batch);
 		
 		this.reader = XMLReader.getInstance();
-		reader.readFile(readfile + "_Dialogue.xml");
-		reader.arrange();
-//		System.out.println(reader.getDialogue().toString());
+		if (!readfile.contains("Start") && !readfile.contains("Finish")) {
+			reader.readFile(readfile + "_Dialogue.xml");
+			reader.arrange();
+		}
+
 		this.textbox = new TextBox(batch);
-        this.textbox.setQuestionFile(readfile + "_Questions.xml");
-		
-		
+		this.textbox.setFilename(readfile);
+		textbox.setIntro(readfile + "_intro.xml");
+//		if (!readfile.contains("Start") && !readfile.contains("Finish")) {
+//			this.textbox.setQuestionFile(readfile + "_Questions.xml");
+//			
+//			
+//		}
 		this.handle.setUpStage();
 		
 		

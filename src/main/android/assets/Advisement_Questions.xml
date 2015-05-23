@@ -46,7 +46,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect, you DO have some responsibilities as an advisee."></Text>
+		<Text text="Incorrect: try again."></Text>
 	</response>
 	<question>
 		<Qid q_id="1"></Qid>
@@ -122,7 +122,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect: if you live in the dorms, your resident assistant can be very helpful with helping you adjust to campus life."></Text>
+		<Text text="Incorrect: if you live in the dorms, your resident assistant can be very helpful with helping you adjust to campus life. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -133,7 +133,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: the Counseling Center is a safe place for you to talk about any issues you struggle with."></Text>
+		<Text text="Incorrect: the Counseling Center is a safe place for you to talk about any issues you struggle with. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -144,7 +144,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect."></Text>
+		<Text text="Incorrect: try again!"></Text>
 	</response>
 		<question>
 		<Qid q_id="3"></Qid>
@@ -160,7 +160,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect: your advisor can also help you choose classes to take and decide on a major."></Text>
+		<Text text="Incorrect: your advisor can also help you choose classes to take and decide on a major. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -193,7 +193,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect."></Text>
+		<Text text="Incorrect: try again!"></Text>
 	</response>
 		<question>
 		<Qid q_id="4"></Qid>
@@ -209,7 +209,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: your advisor can give you information on different majors to help you decide what to major in."></Text>
+		<Text text="Incorrect: your advisor can give you information on different majors to help you decide what to major in. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -231,7 +231,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: your advisor can help you choose which courses to take to fulfill your degree requirements."></Text>
+		<Text text="Incorrect: your advisor can help you choose which courses to take to fulfill your degree requirements. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -258,7 +258,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect, this is not where you meet with your advisor."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect, this is not where you meet with your advisor."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
@@ -280,7 +280,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect, this is not where you meet with your advisor."></Text>
+		<Text text="Incorrect. Try again!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>

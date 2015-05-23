@@ -24,15 +24,16 @@ public class Finish extends GameState{
 	
 	public void render(float delta){
 	
-	if(Gdx.input.isTouched()){
-	
-	isTouched = true;
-	}
-	batch.begin();
-	if(isTouched){
-	batch.draw(leaderBoard, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-	}
-	else batch.draw(finishBanner, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
-	batch.end();
+		if(Gdx.input.isTouched()){
+		
+			isTouched = true;
+		}
+		batch.begin();
+		if(isTouched){
+			batch.draw(leaderBoard, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
+		}
+		else batch.draw(finishBanner, 0,0, Gdx.graphics.getWidth(),Gdx.graphics.getHeight());
+			batch.end();
+		
 	}
 }

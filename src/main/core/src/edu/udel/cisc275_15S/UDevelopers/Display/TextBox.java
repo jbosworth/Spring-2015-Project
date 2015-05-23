@@ -17,9 +17,11 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Answer;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Dialogue;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Question;
+import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Record;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Response;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.Text;
 import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLReader;
+import edu.udel.cisc275_15S.UDevelopers.InputAndEvaluation.XMLWriter;
 
 public class TextBox {
 	public final static int dialogueBox = 0;
@@ -40,20 +42,25 @@ public class TextBox {
 	buttonHandler handle;
 	ArrayList<genericButton> buttons;
 	XMLReader reader;
+	XMLWriter writer;
 	ArrayList<Dialogue> dialogueList;
 	ArrayList<Text> questions;
 	Answer answer;
 	String response;
 	String question;
 	String dialogue;
-	String questionFile;
+	String filename;
 	boolean changeText;
+	int ending;
 	
 	int currentDialogue;
 	int answered;
 	int mode; //0 = Dialogue, 1= Quiz, 2=Response, 3 = EndSectionMode
+	int answeredCorrect;
 	boolean endSection;
 	boolean readIn;
+	boolean readQuiz;
+	boolean updateRecords;
 	
 	public TextBox(SpriteBatch batch) {
 		this.width = Gdx.graphics.getWidth();
@@ -73,18 +80,23 @@ public class TextBox {
      	this.response = "";
      	
      	this.currentDialogue = 0;
-     	this.mode = 0;
+     	this.mode = 4;
      	this.answered = -1;
      	this.handle = buttonHandler.getInstance();
+//     	this.handle.clear();
      	this.reader = XMLReader.getInstance();
+     	this.writer = XMLWriter.getInstance();
      	this.readIn = true;
+     	this.readQuiz = true;
+     	this.updateRecords = false;
      	this.buttons = new ArrayList<genericButton>();
      	this.dialogueList = reader.getDialogue();
-     	System.out.println(reader.getDialogue().toString());
+//     	System.out.println(reader.getDialogue().toString());
 		this.buttons.addAll(createBoxButtons());
 		this.handle.addButtons(buttons);
 		Answer answer = new Answer(0, 0, "", false);
 		this.endSection = false;
+		this.answeredCorrect = 0;
 		
 		
 	}
@@ -115,8 +127,15 @@ public class TextBox {
 			renderResponse();
 		}
 		
-		else {
+		else if (mode == 3) {
 			renderEnd();
+		}
+		
+		else if (mode == 4) {
+			renderIntro();
+		}
+		else if (mode == 5) {
+			renderEndMessage();
 		}
 	}
 	
@@ -154,13 +173,18 @@ public class TextBox {
 
 		b = new answerButton(new Texture(pix),x,y,rectDim[2],rectDim[3]);
 		b.getButton().setVisible(true);
-		b.setId(0);
+		b.setId(dialogueBox);
 		buttonList.add(b);
 		
 		return buttonList;
 	}
 	
 	public void renderDialogue() {
+		if (readIn) {
+			reader.readFile(filename + "_Dialogue.xml");
+			reader.arrange();
+			dialogueList = reader.getDialogue();
+		}
 //		XMLReader reader = XMLReader.getInstance();
 //		ArrayList<Dialogue> dialogueList = reader.getDialogue();
 		if(changeText && currentDialogue < dialogueList.size()) {
@@ -170,6 +194,8 @@ public class TextBox {
 		else if(changeText && currentDialogue >= dialogueList.size()) {
 			mode = 1;
 			handle.quizMode(true);
+			rectColor = new Color(1, 0, 0, 0.5f);
+			readIn = true;
 		}
 		float x = rectDim[0];
 		float y =  rectDim[1];
@@ -189,6 +215,7 @@ public class TextBox {
 		else if(Gdx.input.isKeyJustPressed(Input.Keys.LEFT) && currentDialogue > 0) {
 			currentDialogue--;
 			changeText = true;
+			handle.getButton(dialogueBox).setChecked(false);
 		}
 		
 	}
@@ -199,17 +226,14 @@ public class TextBox {
 	 */
 	//Account for dialogue, questions, response modes
 	public void renderQuiz() {
-//		XMLReader reader = XMLReader.getInstance();
-		if (readIn) {
-			reader.readFile(questionFile);
-			readIn = false;
-			
+		if (readQuiz) {
+			System.out.println("Read in Quiz");
+			reader.readFile(filename + "_Questions.xml");
+			readQuiz = false;
 		}
-//		ArrayList<Answer> answers = reader.getAnswers();
-
 		Question main = null;
 //		if (reader.getQuestions().size() > 0) {
-			if (changeText) {
+			if (changeText && reader.getQuestions().size() > 0) {
 //				System.out.println("Get Questions here");
 				questions = reader.getQuestion();
 				question = questions.remove(0).getText();
@@ -242,18 +266,18 @@ public class TextBox {
 					handle.getButton(i).setChecked(false);
 					handle.quizMode(false);
 					changeText = true;
+					boolean a =( (Answer)(questions.get(answered))).isCorrect();
+					answeredCorrect += a? 1:0;
+					
+//					writer.addRecord(filename, new Record(question,questions.get(answered).toString(), a?"true":"false", "1"));
 				}
 			}
+			
+	
 
-			if (Gdx.input.isKeyJustPressed(Input.Keys.LEFT)) {
-				mode = 0;
-				currentDialogue = dialogueList.size() - 1;
-				handle.quizMode(false);
-			}
 	}
 	
 	public void renderResponse() {
-		XMLReader reader = XMLReader.getInstance();
 		
 		float x = rectDim[0];
 		float y =  rectDim[1];
@@ -279,17 +303,20 @@ public class TextBox {
 		if(handle.isButtonClicked(dialogueBox)) {
 			changeText = true;
 			handle.getButton(dialogueBox).setChecked(false);
-			mode = 0;
+			mode = 1;
+			handle.quizMode(true);
 			
 			if(reader.getQuestions().size() == 0) {
-				mode = 3;
+				mode = 5;
+				rectColor = new Color(0, 0, 1, 0.5f);
+				handle.quizMode(false);
 			}
 		}
 		
 	}
 	
 	public void renderEnd() {
-		if(handle.isButtonClicked(dialogueBox)) {
+		if(handle.isButtonClicked(dialogueBox) || Gdx.input.isKeyJustPressed(Input.Keys.RIGHT)) {
 			this.endSection = true;
 		}
 		float x = rectDim[0];
@@ -303,15 +330,84 @@ public class TextBox {
 		batch.end();
 	}
 	public ArrayList<genericButton> getButtons() {
-		
 		return buttons;
 	}
 	
+	public void renderIntro() {
+		if (readIn) {
+			readIn = false;
+			reader.readFile(filename + "_Intro.xml");
+		}
+		handle.quizMode(false);
+		float x = rectDim[0];
+		float y =  rectDim[1];
+		float width =  rectDim[2];
+		float height =  rectDim[3];
+		float offset = width*0.025f;
+		String message = reader.getMessage();
+		batch.begin();
+		font.drawWrapped(batch, message, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
+		batch.end();
+//		System.out.println(handle.isButtonClicked(dialogueBox));
+		if(handle.isButtonClicked(dialogueBox) || Gdx.input.isKeyJustPressed(Input.Keys.RIGHT)) {
+//			System.out.println(handle.isButtonClicked(dialogueBox));
+			changeText = true;
+			handle.getButton(dialogueBox).setChecked(false);
+			
+			System.out.println(filename);
+			if (filename.contains("Start") || filename.contains("Finish")) {
+				mode = 3;
+				System.out.println("Clicked Start");
+				changeText = true;
+				readIn = true;
+			}
+			else {
+				mode = 0;
+				changeText = true;
+				readIn = true;
+			}
+			
+		}
+	}
+	
+	public void renderEndMessage() {
+		if (readIn && (filename.contains("Start") || filename.contains("Finish"))) {
+			readIn = false;
+			reader.readFile(filename + "_end_" + ending + ".xml");
+		}
+		else if (readIn && answeredCorrect >= 5) {
+			readIn = false;
+			reader.readFile("pass" + ".xml");
+		}
+		else if (readIn) {
+			readIn = false;
+			reader.readFile("retake" + ".xml");
+		}
+		
+		float x = rectDim[0];
+		float y =  rectDim[1];
+		float width =  rectDim[2];
+		float height =  rectDim[3];
+		float offset = width*0.025f;
+		String message = reader.getMessage();
+		batch.begin();
+		font.drawWrapped(batch, message, x + offset, y + height*0.95f, width - offset, BitmapFont.HAlignment.LEFT);
+		batch.end();
+		
+		if(handle.isButtonClicked(dialogueBox)) {
+			changeText = true;
+			handle.getButton(dialogueBox).setChecked(false);
+			mode = 3;
+			
+		}
+	}
 	/**
 	 * mode 0 = Dialogue
 	 * mode 1 = Quiz
 	 * mode 2 = Response
 	 * mode 3 = End Section
+	 * mode 4 = intro message
+	 * mode 5 = end pass/fail message for module
 	 * @param mode
 	 */
 	public void setMode(int mode) {
@@ -323,13 +419,40 @@ public class TextBox {
 	}
 	
 	public void setQuestionFile(String file) {
-		this.questionFile = file;
+		reader.readFile(file);
 	}
+	
+	public void setIntro(String file) {
+		reader.readFile(file);
+	}
+	public void setEnd(String file) {
+		reader.readFile(file);
+	}
+	public void setFilename(String file) {
+		this.filename = file;
+	}
+	
 	
 	public void nextDialogue() {
 		currentDialogue++;
 	}
 	public void backDialogue() {
 		currentDialogue--;
+	}
+	
+	public void setEnding(int ending) {
+		this.ending = ending;
+	}
+	
+	public boolean isPassed() {
+		return answeredCorrect >= 5;
+	}
+	public void restart() {
+		currentDialogue = 0;
+		readQuiz = true;
+		answeredCorrect = 0;
+		readIn = true;
+		endSection = false;
+		mode = 4;
 	}
 }

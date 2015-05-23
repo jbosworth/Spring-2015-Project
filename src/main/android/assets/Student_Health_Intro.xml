@@ -1,5 +1,4 @@
 <Student_Health_Intro>
-	<Message text="Welcome to the Student Health Center. Your mission is to discover information about the services available here, how to pay for these health services through your UD account, and how safety on campus works." num="1"></Message>
-	<Message text="After you acquire this information, you will then be tested on what you've learned." num="2"></Message> 
-	<Message text="In order to complete this mission and not have to come back to Student Health, you must get at least 5 of the 6 answers correct. Good luck!" num="3"> </Message>
+	<Message text="Welcome to the Student Health Center. Your mission is to discover information about the services available here, how to pay for these health services through your UD account, and how safety on campus works. After you acquire this information, you will then be tested on what you've learned." num="1"></Message> 
+	<Message text="In order to complete this mission and not have to come back to Student Health, you must get at least 75% of the answers correct. Good luck!" num="2"> </Message>
 </Student_Health_Intro>
