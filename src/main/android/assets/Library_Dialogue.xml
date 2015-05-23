@@ -10,7 +10,7 @@
 	<c1 text="How early is the deadline?" num="9"></c1>
 	<c3 text="It can be as early as 9 months before the program actually starts." num="10"></c3>
 	<c2 text="I guess that makes sense. Are there opportunities like that which aren’t so far away?" num="11"></c2>
-	<c3 text="Yes, one such program is the Service Learning Scholar Program in which a service-learning or community-based research project for ten weeks in the summer for a community agency in Delaware." num="12"></c3>
+	<c3 text="Yes: in the Service Learning Scholar Program, a student works on a service-learning or community-based research project for ten weeks in the summer for a community agency in Delaware." num="12"></c3>
 	<c3 text="Students in this program spend most of their time working in the community, but they spend a quarter of their time in academic reading, discussion, and reflection too. Projects can be conducted in any major, but a proposal must first be submitted about the intended project before the student is accepted into the program." num="13"></c3>
 	<c2 text="Is that volunteer work?" num="14"></c2>
 	<c3 text="It is volunteer work by nature, but the student receives a stipend for spending and a stipend for housing too." num="15"></c3>
@@ -19,4 +19,5 @@
 	<c3 text="The website for the Center of Undergraduate Research provides information about programs elsewhere in the country and even international research programs too." num="18"></c3> 
 	<c3 text="It also has information on doing a Senior Thesis and Summer Scholars Program, where a student conducts his or her own project – whether research or creative work – under the close supervision of a professor." num="19"></c3>
 	<c2 text="Wow, there are so many opportunities here! Thanks for answering all my questions." num="20"></c2>
+	<c3 text="No problem! Have a great day." num="21"></c3>
 </Library_Dialogue>
