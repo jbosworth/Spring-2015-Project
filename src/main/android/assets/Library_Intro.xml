@@ -1,5 +1,5 @@
 <Library_Intro>
 	<Message text="Now that you've arrived at the library, your mission is to uncover secrets about undergraduate research and off-campus opportunities offered through UD." num="1"></Message>
-	<Message text="You will then be quizzed on this information, and you must get at least 3/4 of the answers correct in order to pass this mission. If you get a lower score, you will need to come back here later, which will slow you down in the race!" num="2"></Message>
+	<Message text="You will then be quizzed on this information, and you must get at least 5/6 of the answers correct in order to pass this mission. If you get a lower score, you will need to come back here later, which will slow you down in the race!" num="2"></Message>
 	<Message text="What are you waiting for? Time to get started!" num="3"> </Message>
 </Library_Intro>
