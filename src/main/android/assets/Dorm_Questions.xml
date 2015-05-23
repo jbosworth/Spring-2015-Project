@@ -13,7 +13,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Correct!"></Text>
+		<Text text="Correct! The free drop/add period ends two weeks after the semester begins."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -24,7 +24,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: this is not when the free drop/add period ends."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -35,7 +35,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: this is not when the free drop/add period ends."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -46,7 +46,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: this is not when the free drop/add period ends."></Text>
 	</response>
 	<question>
 		<Qid q_id="1"></Qid>
@@ -62,7 +62,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Correct!"></Text>
+		<Text text="Correct! You can withdraw from a class without academic penalty before the academic penalty deadline."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -73,7 +73,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect."></Text>
+		<Text text="Incorrect: you are not stuck in a class after the free drop/add deadline passes."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -84,18 +84,18 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="This statement is incorrect: after the academic penalty deadline, you may NOT drop a class without a valid excuse."></Text>
+		<Text text="This statement is incorrect because after the academic penalty deadline, you may NOT drop a class without a valid excuse."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="No, you can add a class at any time, but it may be a lot of work"></Text>
+		<Text text="No: you can add a class at any time, but it may be a lot of work"></Text>
 		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="This statement is incorrect."></Text>
+		<Text text="Incorrect: no schedule changes are permitted after the academic penalty deadline without an acceptable excuse."></Text>
 	</response>
 	<question>
 		<Qid q_id="2"></Qid>
@@ -111,7 +111,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect, this is not the deadline to withdraw from a class."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -122,7 +122,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Correct!"></Text>
+		<Text text="Correct! You may withdraw from a class up to the eighth week of the semester."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -133,7 +133,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect, this is not the deadline to withdraw from a class."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -144,12 +144,12 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect, this is not the deadline to withdraw from a class."></Text>
 	</response>
 	<question>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="How do you change your major?"></Text>
+		<Text text="What is the procedure for changing your major?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -160,7 +160,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: this is not the procedure for changing your major."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: this is not the procedure for changing your major."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -193,12 +193,12 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: this is not the procedure for changing your major."></Text>
 	</response>
 	<question>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="What is NOT an acceptable reason to ask to have your schedule changed after the academic penalty deadline?"></Text>
+		<Text text="What is NOT an acceptable reason to have your schedule changed after the academic penalty deadline?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -209,7 +209,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: family problems may be an acceptable reason to ask to have your schedule changed after the academic penalty deadline."></Text>
+		<Text text="Incorrect: family problems may be an acceptable reason to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -231,7 +231,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: death of a relative may be accepted as a reason to ask to have your schedule changed after the academic penalty deadline."></Text>
+		<Text text="Incorrect: death of a relative may be accepted as a reason to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -242,7 +242,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect: emotional difficulties may be an acceptable reason to ask to have your schedule changed after the academic penalty deadline."></Text>
+		<Text text="Incorrect: emotional difficulties may be an acceptable reason to have your schedule changed after the academic penalty deadline."></Text>
 	</response>
 		<question>
 		<Qid q_id="5"></Qid>
@@ -258,7 +258,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: this website is often used by professors to post important course information."></Text>
+		<Text text="Incorrect: Sakai is often used by professors to post important course information."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this website is often used by professors to post important course information."></Text>ext>
+	<Text text="Incorrect: Canvas is often used by professors to post important course information."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
@@ -291,6 +291,6 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Correct! Course information can NOT be found on UDSIS. However, grades, class meeting time and place, and final exam time for a course CAN be found on UDSIS."></Text>
+		<Text text="Correct! Professors do NOT post course information on UDSIS. However, grades, class meeting time and place, and final exam time for a course CAN be found on UDSIS."></Text>
 	</response>
 </Dorm_Questions>
