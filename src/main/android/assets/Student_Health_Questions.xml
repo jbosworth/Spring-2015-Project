@@ -2,7 +2,7 @@
 	<question>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Choose the incorrect statement about My Finances."></Text>
+		<Text text="Choose the INCORRECT statement about My Finances."></Text>
 	</question>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -13,7 +13,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect, this statement is true. Try again!"></Text>
+		<Text text="Incorrect, students can grant their parents access to the student's financial account if they choose."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -24,7 +24,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Correct, this statement is not true: payments can also be made online through My Finances."></Text>
+		<Text text="Correct, this statement is false: payments can also be made online through My Finances."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -35,7 +35,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect, this statement is valid: My Finances provides links and tips for finding scholarships outside of the university.  Try again!"></Text>
+		<Text text="Incorrect, this statement is valid: My Finances provides links and tips for finding scholarships outside of the university."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -46,7 +46,7 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: there IS information about Work Study Options available through My Finances!"></Text>
 	</response>
 	<question>
 		<Qid q_id="1"></Qid>
@@ -111,7 +111,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: this statement is true. Try again!"></Text>
+		<Text text="Incorrect: there IS free STD testing available at the Student Health Center."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -122,7 +122,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect: this statement is true. Try again!"></Text>
+		<Text text="Incorrect: there IS a Self Care Wound Center at the Student Health Center!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -133,7 +133,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: this statement is valid. Try again!"></Text>
+		<Text text="Incorrect: the Student Health Center does provide a wart clinic."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -149,7 +149,7 @@
 	<question>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Which of the following is an incorrect statement about the University of Delaware Police Department?"></Text>
+		<Text text="Which of the following is an INCORRECT statement about the University of Delaware Police Department?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -160,7 +160,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect: this statement is true. Try again!"></Text>
+		<Text text="Incorrect: Sexual Assault Prevention and Education IS provided by the University of Delaware Police."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect, this is a true statement. Try again!"></Text>
+		<Text text="Incorrect, Physical Self Defense classes ARE provided by the University of Delaware Police!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -182,7 +182,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="You're correct, this statement is false: this is the non-emergency number. Call 911 for any emergencies on campus."></Text>
+		<Text text="You're correct, this statement is false: this is the non-emergency number. Call 911 for any emergencies on or off campus."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -193,12 +193,12 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect, this statement is true. Try again!"></Text>
+		<Text text="Incorrect, the LiveSafe app DOES allow you to connect with police via text."></Text>
 	</response>
 		<question>
 	<Qid q_id="4"></Qid>
 	<Aid a_id="1"></Aid>
-	<Text text="Which of these can be found at the Student Health Center?"></Text>
+	<Text text="Which of these CAN be found at the Student Health Center?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -220,7 +220,7 @@
 	<response>
 		<Qid q_id="4"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Correct! All of these resources can be found at the Student Health Center!"></Text>
+		<Text text="Correct! ALL of these resources can be found at the Student Health Center!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="4"></Qid>
@@ -280,7 +280,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect: the Self-Care Clinic, along with all Student Health Services, is covered under the Student Health Fee."></Text>
+		<Text text="Incorrect: the Self-Care Clinic, as with all Student Health Services, is covered under the Student Health Fee."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
