@@ -1,4 +1,4 @@
 <Dorm_Intro>
 	<Message text="Now that you are in your dorm, you must explore the University of Delaware's online resources from your computer. Then you'll be quizzed about what you've learned." num="1"></Message> 
-	<Message text="If you can't answer at least three-quarters of the questions about the online resources right, you need to come back to your dorm later. Good luck, and don't let the other teams get ahead in the race!" num="2"> </Message>
+	<Message text="If you can't answer at least five of the six questions about the online resources right, you need to come back to your dorm later. Good luck, and don't let the other teams get ahead in the race!" num="2"> </Message>
 </Dorm_Intro>
