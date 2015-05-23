@@ -13,18 +13,18 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: information about international research programs is offered at the Center for Undergraduate Research!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Assistance with research projects and papers"></Text>
+		<Text text="Assistance with research papers"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Correct. The Center for Undergraduate Research is geared towards ongoing research projects with faculty, not research projects and papers for a class."></Text>
+		<Text text="Correct. The Center for Undergraduate Research is designed to help you get involved in ongoing research projects with faculty, NOT to assist you with research papers for a class."></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
@@ -35,18 +35,18 @@
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: senior thesis opportunities ARE offered at the Center for Undergraduate Research!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
 		<Text text="Summer research projects"></Text>
-		<Bool correct="true"></Bool>
+		<Bool correct="false"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="0"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: summer research projects ARE offered at the Center for Undergraduate Research!"></Text>
 	</response>
 	<question>
 		<Qid q_id="1"></Qid>
@@ -73,7 +73,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: there is no limit to the number of times you study abroad, but many students find it too expensive to study abroad every year."></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -84,7 +84,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: scholarships are available for all study abroad trips!"></Text>
 	</response>
 	<answer>
 		<Qid q_id="1"></Qid>
@@ -95,7 +95,7 @@
 	<response>
 		<Qid q_id="1"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: there are several study abroad trips that last an entire semester."></Text>
 	</response>
 	<question>
 		<Qid q_id="2"></Qid>
@@ -105,13 +105,13 @@
 	<answer>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Students spend half of their time in academic reading, discussion, and reflection"></Text>
+		<Text text="Students spend the majority of their time in academic reading, discussion, and reflection"></Text>
 		<Bool correct="true"></Bool>
 	</answer>
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="0"></Aid>
-		<Text text="Correct. Students spend a quarter of their time in academic reading, discussion, and reflection. The majority of the students’ time is spent working in the community. "></Text>
+		<Text text="Correct: this statement is false. Students spend only a quarter of their time in academic reading, discussion, and reflection. The majority of the students’ time is spent working in the community."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -122,7 +122,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="1"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: Service Learning projects CAN be conducted in any major."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -133,7 +133,7 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="2"></Aid>
-		<Text text="Incorrect. Try again!"></Text>
+		<Text text="Incorrect: a spending stipend and housing stipend ARE provided to students during Service Learning Projects."></Text>
 	</response>
 	<answer>
 		<Qid q_id="2"></Qid>
@@ -144,12 +144,12 @@
 	<response>
 		<Qid q_id="2"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Incorrect! Try again."></Text>
+		<Text text="Incorrect: it is true that projects are only conducted in the Delaware community area."></Text>
 	</response>
 	<question>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Which of the following typically takes place on campus?"></Text>
+		<Text text="Which of the following typically takes place ON campus?"></Text>
 	</question>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -171,7 +171,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: Service Learning projects take place in the Delaware community, not necessarily on campus."></Text>ext>
+	<Text text="Incorrect: Service Learning projects take place in the Delaware community, but not necessarily on campus."></Text>
 	</response>
 	<answer>
 		<Qid q_id="3"></Qid>
@@ -193,7 +193,7 @@
 	<response>
 		<Qid q_id="3"></Qid>
 		<Aid a_id="3"></Aid>
-		<Text text="Correct! Projects through the Undergraduate Research Program typically take place in one of the many laboratories on campus."></Text>
+		<Text text="Correct! Projects through the UD Undergraduate Research Program typically take place in one of the many laboratories on campus."></Text>
 	</response>
 	<question>
 	<Qid q_id="4"></Qid>
@@ -269,7 +269,7 @@
 	<response>
 		<Qid q_id="5"></Qid>
 		<Aid a_id="1"></Aid>
-	<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>ext>
+	<Text text="Incorrect: this information CAN be found on the website for the Center of Undergraduate Research."></Text>
 	</response>
 	<answer>
 		<Qid q_id="5"></Qid>
