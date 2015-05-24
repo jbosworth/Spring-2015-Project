@@ -1,0 +1,101 @@
+UDevelopers
+CISC 275 011
+May 7, 2015
+
+Test Script
+
+Project ID: UDiscover
+Test ID: 1
+Purpose: To test the login screen
+Test Environment: libGDX
+Test Steps: Start program. Once on the login page,
+1.)	Login using your 9 digit student ID and password.
+2.)	Login using random student Id and random password.
+Expected Result: The user will see a map, and the student ID will be written to the xml file which collects the student data. 
+_____________________________________________________________________________
+
+Project ID: UDiscover
+Test ID: 2
+Purpose: To test map functionality 
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Once you see the map click on any building: 
+Library 
+Advisement 
+Academic 
+Dorm 
+Student Health 
+Career Services
+Expected Result:
+You will see the setting corresponding to the building you picked. For example, if you click on the library, you will see a setting from the library with books in the background. 
+______________________________________________________________________________
+
+Project ID: UDiscover
+Test ID: 3
+Purpose: To test “Help” button on map
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Once you see the map click on “Help” at the top right. 
+Expected Result:
+You will see information pertaining to the objective of the game and brief instructions. 
+______________________________________________________________________________
+
+Project ID: UDiscover
+Test ID: 4
+Purpose: To test the check mark function (On the Map)
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Once you see the map click on any building 
+(Library, Advisement, Academic, Dorm, Student Health, or Career Services) Then go through the tutorial portion of that module by clicking through the dialogue, and answering the questions: 
+Answer the questions with a score of 75 percent or lower (less than 5 out of 6 questions). 
+Answer the questions with a score of 75 percent or higher (at least 5 out of 6 questions). 
+Expected Result:
+Once all the questions are complete, you will return to the map screen and there will be a checkmark next to the module you have completed.
+Once all the questions are complete, you will return to the map screen and the circle will still be empty next to the module. 
+______________________________________________________________________________
+ 
+Project ID: UDiscover
+Test ID: 5
+Purpose: To test completion of the game notification and leaderboard
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Once you see the map complete all the modules: Library, Advisement, Academic, Dorm, Student Health, and Career Services. Then go through the tutorial portion of that module by clicking through the dialogue, and then answer the questions correctly. 
+
+Expected Result:
+The game will be complete when the map has a checkmark is next to each module on the map. Then an end-of-game message is displayed to notify the user that the game is complete with the leader board below. 
+______________________________________________________________________________
+ 
+Project ID: UDiscover
+Test ID: 6
+Purpose: To test read dialogue from XML files
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Click on the library
+
+Expected Result:
+User will see dialogue in the text box at the bottom of the screen. Clicking on the text box will produce more text.
+______________________________________________________________________________
+ 
+Project ID: UDiscover
+Test ID: 7
+Purpose: To test read questions and answers from XML files
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Click on the library -> Click through the dialogue
+
+Expected Result:
+User will see a question with four answers in the text box at the bottom of the screen.
+______________________________________________________________________________
+ 
+Project ID: UDiscover
+Test ID: 8
+Purpose: To test read responses from XML files
+Test Environment: libGDX
+Test Steps: Start program -> Login -> Click on the library -> Click through the dialogue -> Click on one of four answers below the question
+
+Expected Result:
+User will see the question answered, the answer chosen, and a response that indicates whether or not the answer chosen was correct in the text box at the bottom of the screen.
+______________________________________________________________________________
+ 
+Project ID: UDiscover
+Test ID: 9
+Purpose: To test data output to XML files
+Test Environment: libGDX
+Test Steps: Follow steps from Test ID: 4 -> Check the assets folder under the android folder -> Click on appropriate “_eval” file (e.g. if you tested the library module, open file that looks like “Library_eval.xml”) 
+
+Expected Result:
+The relevant XML file will contain the ids of questions from the module, whether or not they were answered correctly, and how many times it took the user to answer them.
