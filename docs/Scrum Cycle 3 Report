@@ -1,0 +1,58 @@
+UDevelopers – Scrum Cycle 3 Report
+
+Scrum Cycle 3
+Scrum Masters: Adrian King, Miles Russell
+
+1. What bugs or enhancements will be included in the next project release?
+•	Condensed Dialog and Questions
+•	Check Accuracy of Dialog/Questions
+•	Amazing Race Theme (Leader Board, Timer, Graphics, Teammates)
+•	Module Corrections (Insuring that the dialog, check marks, and buttons correspond to the correct module
+•	Interface Improvements 
+•	Add Tutorial, Help, Start and Finish states to GSM
+•	Create more characters, graphics for new states and also add more characters to Library and Student Health States 
+•	Fix Sign on Button for Login Screen
+•	Create Head Shots of Characters for dialog box
+•	Force Retake of Assessment Sections with a failing score
+
+2. Who will work on each bug fix or enhancement implementation?
+•	Adrian King – Game States
+•	Miles Russell – Graphics / Login Screen / Module Corrections
+•	Kati McLaughlin – Q&A/Dialogue enhancements /corrections 
+•	Sean Rivera – Interface Improvements
+•	Jordan Bosworth – XML Evaluation output 
+
+3. What resources will be required to complete the bug fix or enhancement implementation?
+•	No further resources are necessary.
+
+4. How will successful bug fixes or enhancement implementations be demonstrated?
+•	We will demonstrate our successful enhancements and bug fixes during our client evaluation. We have make enhancements to the XMLReader and Controller classes, our Amazing Race competition theme and also added unit testing and additional documentation.
+	
+5. What progress has been made on product development?
+•	We have all the core features we wanted to implement in our project finished. We are now in the process of fixing minor bugs and features to make game play more enjoyable. 
+
+6. What obstacles have been encountered?
+•	There have been a few small obstacles with our code. The game seemed to be lagging during gameplay after a few minutes. When the user clicked on a building, the module would take a few seconds to load. We fixed this problem by loading all the game states when the game is launched. 
+
+7.  What bugs have been fixed or enhancements implemented? 
+•	Condensed Dialog and Questions
+•	Check Accuracy of Dialog/Questions
+•	Amazing Race Theme (Leader Board, Timer, Graphics, Teammates)
+•	Module Corrections (Insuring that the dialog, check marks, and buttons correspond to the correct module
+•	Interface Improvements 
+•	Add Tutorial, Help, Start and Finish states to GSM
+•	Create more characters, graphics for new states and also add more characters to Library and Student Health States 
+•	Fix Sign on Button for Login Screen
+•	Create Head Shots of Characters for dialog box
+•	Force Retake of Assessment Sections with a failing score
+
+8. What bugs have not been fixed or enhancements not implemented? 
+•	UDSIS tutorial 
+
+9. What resources were consumed? 
+•	LibGdx 
+•	Git Hub
+•	Adobe Illustrator 
+
+10. How can the product development process be improved? 
+•	Our group decided that it was best if we communicated more effectively which we have improved on in the past weeks. We have also been working more consistently on the project
